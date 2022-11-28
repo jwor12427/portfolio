@@ -1,0 +1,60 @@
+/** @format */
+#section2 {
+	width: 100%;
+}
+.about__wrap {
+	width: 100%;
+	height: 200vh;
+}
+.about__inner {
+	padding: 150px 80px;
+}
+.about__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.about__bottom {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+}
+.about__img01 {
+	width: 500px;
+	height: 500px;
+	margin-left: 70px;
+}
+.about__img02 {
+	width: 420px;
+	height: 420px;
+	transform: rotate(-30deg);
+}
+.about__desc {
+	width: 50%;
+}
+.about__desc.left {
+	margin-right: 15rem;
+}
+.about__desc .about__title {
+	font-family: "PPMonument";
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.about__desc .about__me {
+	font-family: "NexonLv2Gothic";
+	font-weight: 300;
+	line-height: 150%;
+	width: 600px;
+	font-size: 18px;
+}
+.about__icon {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+}
+.about__rail {
+	border-top: 2px solid #f55c47;
+	transform: translate(0px, 0px);
+}
