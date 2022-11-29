@@ -1,5 +1,6 @@
 /** @format */
 #section1 {
+	margin-top: 80px;
 	width: 100%;
 	height: 100vh;
 }
@@ -9,16 +10,16 @@
 }
 .top {
 	width: 100%;
-	height: 96vh;
+	height: 88.5vh;
 }
 .main__top {
 	width: 100%;
 	font-family: "PPMonument";
-	font-size: 500px;
+	font-size: 30vw;
 	overflow: hidden;
 	position: absolute;
 	left: 0;
-	top: 10%;
+	top: 15%;
 	display: flex;
 }
 .top__title {
@@ -34,7 +35,7 @@
 .main__ce {
 	width: 40%;
 	position: relative;
-	padding-top: 150px;
+	padding-top: 80px;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
@@ -82,6 +83,18 @@
 	transform: rotate(90deg);
 	vertical-align: 3px;
 }
+.main__icon.black {
+	display: inline-block;
+	margin-right: 2.5rem;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-bottom: 9px solid #101010;
+	border-left: 0px solid transparent;
+	border-right: 9px solid transparent;
+	transform: rotate(90deg);
+	vertical-align: 3px;
+}
 .rail__inner {
 	white-space: nowrap;
 	display: flex;
@@ -98,7 +111,7 @@
 	font-weight: 800;
 	text-transform: uppercase;
 	font-family: "PPMonument";
-	font-size: 90px;
+	font-size: 5vw;
 	white-space: nowrap;
 	padding-right: 2rem;
 }

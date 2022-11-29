@@ -65,6 +65,9 @@ textarea {
 .gray {
 	background-color: #f0f0f0;
 }
+.red {
+	background-color: #f55c47;
+}
 /* 가로모드 초기화 */
 html {
 	-ms-text-size-adjust: 100%;
