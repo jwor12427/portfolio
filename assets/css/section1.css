@@ -9,7 +9,7 @@
 	height: 100vh;
 }
 .main__wrap {
-	padding-top: 80px;
+	padding-top: 70px;
 }
 .top {
 	width: 100%;
@@ -23,7 +23,7 @@
 	overflow: hidden;
 	position: absolute;
 	left: 0;
-	/* top: 10%; */
+	top: -2%;
 	display: flex;
 	align-items: center;
 }
@@ -35,7 +35,7 @@
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-name: rail;
-	animation-duration: 40s;
+	animation-duration: 35s;
 }
 .main__ce {
 	width: 40%;
