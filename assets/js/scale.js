@@ -7,14 +7,14 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".v1",
 		{
-			scale: 1.4,
+			scale: 1.35,
 			opacity: 0,
-			transform: "translateX(0%) translateY(0%)",
+			transform: "translate3d(0,0,0)",
 		},
 		{
-			scale: 0.97,
+			scale: 0.976,
 			opacity: 1,
-			transform: "translateX(0%) translateY(-60%)",
+			transform: "translate3d(0,-30px,0)",
 		}
 	),
 });
@@ -26,12 +26,12 @@ ScrollTrigger.create({
 		{
 			scale: 1.35,
 			opacity: 0,
-			transform: "translateX(0%) translateY(0%)",
+			transform: "translate3d(-20px,0,0)",
 		},
 		{
-			scale: 0.97,
+			scale: 0.96,
 			opacity: 1,
-			transform: "translateX(0%) translateY(-40%)",
+			transform: "translate3d(-20px,-20px,0)",
 		}
 	),
 });
@@ -41,14 +41,14 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".v3",
 		{
-			scale: 1.4,
+			scale: 1.35,
 			opacity: 0,
-			transform: "translateX(0%) translateY(0%)",
+			transform: "translate3d(0,0,0)",
 		},
 		{
-			scale: 0.97,
+			scale: 0.96,
 			opacity: 1,
-			transform: "translateX(0%) translateY(-20%)",
+			transform: "translate3d(0,-10px,0)",
 		}
 	),
 });
@@ -58,16 +58,14 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".v4",
 		{
-			scale: 1.4,
+			scale: 1.35,
 			opacity: 0,
-			transform: "translateX(0%) translateY(0%)",
-			transformOrigin: "200 75",
+			transform: "translate3d(-20px,0,0)",
 		},
 		{
-			scale: 0.97,
+			scale: 0.96,
 			opacity: 1,
-			transform: "translateX(0%) translateY(0%)",
-			transformOrigin: "50 0",
+			transform: "translate3d(-20px,0,0)",
 		}
 	),
 });
@@ -77,14 +75,14 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".v5",
 		{
-			scale: 1.4,
+			scale: 1.35,
 			opacity: 0,
-			transform: "translateX(0%) translateY(0%)",
+			transform: "translate3d(0,0,0)",
 		},
 		{
-			scale: 0.97,
+			scale: 0.96,
 			opacity: 1,
-			transform: "translateX(0%) translateY(20%)",
+			transform: "translate3d(0,10px,0)",
 		}
 	),
 });

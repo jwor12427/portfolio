@@ -97,10 +97,10 @@
 }
 .about__rail__inner {
 	/* animation: animate 4s linear; */
-	animation: a-rail 6s linear infinite;
+	animation: a-rail 7s linear infinite;
 }
 .about__rail__inner-b {
-	animation: b-rail 6s linear infinite;
+	animation: b-rail 8s linear infinite;
 }
 @keyframes a-rail {
 	0% {
@@ -115,7 +115,7 @@
 		transform: translateX(-70%);
 	}
 	100% {
-		transform: translateX(0%);
+		transform: translate3d(0%, 0, 0);
 	}
 }
 /* @keyframes animate {
