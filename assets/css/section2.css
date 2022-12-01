@@ -1,6 +1,7 @@
 /** @format */
 #section2 {
 	width: 100%;
+	cursor: default;
 }
 .about__wrap {
 	width: 100%;

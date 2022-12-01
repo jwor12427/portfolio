@@ -2,6 +2,7 @@
 #section1 {
 	width: 100%;
 	height: 100vh;
+	cursor: default;
 }
 .main__inner {
 	width: 100%;
@@ -11,6 +12,7 @@
 .main__wrap {
 	padding-top: 70px;
 }
+
 .top {
 	width: 100%;
 	height: 78.5vh;
@@ -66,6 +68,7 @@
 	border-top: 2px solid #101010;
 	border-bottom: 2px solid #101010;
 	overflow: hidden;
+	background-color: #f0f0f0;
 }
 .main__title {
 	font-family: "NexonLv2Gothic";
@@ -134,7 +137,7 @@
 		transform: translateZ(0);
 	}
 	100% {
-		transform: translate3d(-110%, 0, 0);
+		transform: translate3d(-120%, 0, 0);
 	}
 }
 @keyframes rail2 {
@@ -142,7 +145,7 @@
 		transform: translateZ(0);
 	}
 	100% {
-		transform: translate3d(-190%, 0, 0);
+		transform: translate3d(-164%, 0, 0);
 	}
 }
 

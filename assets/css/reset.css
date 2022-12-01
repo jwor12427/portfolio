@@ -165,3 +165,16 @@ button {
 ::-webkit-scrollbar-thumb:hover {
 	background: rgba(123, 128, 139, 0.589);
 }
+.coursor__wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 9999;
+	border-radius: 50%;
+	background: #f55c47;
+	user-select: none;
+	pointer-events: none;
+	transition: transform 0.3s, opactiy 0.2s;
+}

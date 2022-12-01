@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -42,7 +42,11 @@
 				</div>
 			</div>
 		</header>
+
 		<main id="contents">
+			<div class="mouser__cursor">
+				<div class="coursor__wrap"></div>
+			</div>
 			<section
 				id="section1"
 				class="gray"
@@ -1334,6 +1338,45 @@
 					scrub: 1,
 				},
 				xPercent: 25,
+			});
+			let tl = gsap.timeline({ repeat: 0, repeatDelay: 0 });
+			tl.fromTo(
+				".top",
+				{
+					opacity: 0,
+					transform: "translate3d(0, -100%, 0)",
+					visibility: "visible",
+					transformOrigin: "top",
+				},
+				{
+					opacity: 1,
+					transform: "translate3d(0, 0, 0)",
+					delay: 0.2,
+					transformOrigin: "top",
+					duration: 1,
+				}
+			);
+			tl.fromTo(
+				".main__rail",
+				{
+					opacity: 0,
+					transform: "translate3d(100%, 0, 0)",
+					transformOrigin: "left",
+				},
+				{
+					opacity: 1,
+					transform: "translate3d(0, 0, 0)",
+					transformOrigin: "left",
+					duration: 1,
+				}
+			);
+			const cursor = document.querySelector(".coursor__wrap");
+			window.addEventListener("mousemove", (e) => {
+				gsap.to(cursor, {
+					duration: 0.3,
+					left: e.pageX - 5,
+					top: e.pageY - 5,
+				});
 			});
 		</script>
 	</body>
