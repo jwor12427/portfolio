@@ -97,22 +97,22 @@
 }
 .about__rail__inner {
 	/* animation: animate 4s linear; */
-	animation: a-rail 10s linear infinite;
+	animation: a-rail 6s linear infinite;
 }
 .about__rail__inner-b {
-	animation: b-rail 10s linear infinite;
+	animation: b-rail 6s linear infinite;
 }
 @keyframes a-rail {
 	0% {
 		transform: translateZ(0);
 	}
 	100% {
-		transform: translate3d(-60%, 0, 0);
+		transform: translate3d(-70%, 0, 0);
 	}
 }
 @keyframes b-rail {
 	0% {
-		transform: translateX(-60%);
+		transform: translateX(-70%);
 	}
 	100% {
 		transform: translateX(0%);
@@ -161,7 +161,7 @@
 .about__icon.icon-c5 {
 	left: 29%;
 	top: 65%;
-	animation: iconup 6s linear infinite;
+	animation: iconup 10s linear infinite;
 	will-change: top;
 }
 .about__icon.icon-c6 {
@@ -179,7 +179,7 @@
 .about__icon.icon-c8 {
 	left: 34%;
 	top: 45%;
-	animation: iconup 7s linear infinite;
+	animation: iconup 12s linear infinite;
 	will-change: top;
 }
 .about__icon.icon-c9 {
@@ -203,7 +203,7 @@
 .about__icon.icon-c12 {
 	left: 79%;
 	top: 2%;
-	animation: iconup 5s linear infinite;
+	animation: iconup 11s linear infinite;
 	will-change: top;
 }
 .about__icon.icon-c13 {

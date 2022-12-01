@@ -21,7 +21,7 @@
 .header__logo {
 	width: 15%;
 	font-family: "PPMonument";
-	font-size: 26px;
+	font-size: 1.6vw;
 	font-weight: 200;
 	text-transform: uppercase;
 	border-right: 1px solid #101010;
@@ -37,7 +37,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	font-size: 18px;
+	font-size: 1.35vw;
 	font-family: "Abel";
 	text-transform: uppercase;
 	line-height: 1.1;
@@ -45,10 +45,10 @@
 .header__badge {
 	display: inline-block;
 	background-color: #101010;
-	padding: 0.25rem 0.7rem;
+	padding: 0.2rem 0.7rem;
 	color: #f0f0f0;
 	border-radius: 20px;
-	font-size: 14px;
+	font-size: 1.1vw;
 	margin-left: 5px;
 	text-align: center;
 }

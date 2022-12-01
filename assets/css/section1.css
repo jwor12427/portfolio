@@ -19,16 +19,16 @@
 .main__top {
 	width: 100%;
 	font-family: "PPMonument";
-	font-size: 30vw;
+	font-size: 28vw;
 	overflow: hidden;
 	position: absolute;
 	left: 0;
-	top: -2%;
+	top: 2%;
 	display: flex;
 	align-items: center;
 }
 .top__title {
-	display: block;
+	display: inline-block;
 	font-weight: 900;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -45,8 +45,8 @@
 	box-sizing: border-box;
 }
 .back {
-	width: 600px;
-	height: 600px;
+	width: 35vw;
+	height: 35vw;
 	position: absolute;
 	z-index: 10;
 	animation-iteration-count: infinite;
@@ -56,8 +56,8 @@
 	overflow: hidden;
 }
 .frot {
-	width: 600px;
-	height: 600px;
+	width: 35vw;
+	height: 35vw;
 	position: absolute;
 	z-index: 100;
 }
@@ -74,6 +74,7 @@
 	left: 0;
 	bottom: 4%;
 	min-width: 20rem;
+	font-size: 1.1vw;
 	padding-left: 1.2rem;
 }
 .main__icon {
@@ -106,8 +107,9 @@
 	will-change: transform;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	animation-name: rail;
+	animation-name: rail2;
 	animation-duration: 20s;
+	height: 7vw;
 }
 .rail__item {
 	display: flex;
@@ -124,12 +126,23 @@
 .rail__icon {
 	padding-right: 2rem;
 }
+.rail__icon svg {
+	width: 6vw;
+}
 @keyframes rail {
 	0% {
 		transform: translateZ(0);
 	}
 	100% {
 		transform: translate3d(-110%, 0, 0);
+	}
+}
+@keyframes rail2 {
+	0% {
+		transform: translateZ(0);
+	}
+	100% {
+		transform: translate3d(-190%, 0, 0);
 	}
 }
 
