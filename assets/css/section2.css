@@ -10,7 +10,9 @@
 .about__inner {
 	padding: 150px 80px;
 	position: relative;
+	overflow: hidden;
 }
+
 .about__top {
 	display: flex;
 	justify-content: space-between;
@@ -39,6 +41,7 @@
 	bottom: 20%;
 }
 .about__desc {
+	position: relative;
 	width: 50%;
 	z-index: 10;
 }
@@ -69,14 +72,18 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
+	z-index: 1;
 }
 
 .about__rail {
 	border-top: 2px solid #f55c47;
-	border-bottom: 2px solid #f55c47;
+	/* border-bottom: 2px solid #f55c47; */
 	transform: translate(0px, 0px);
+	overflow: hidden;
 }
-
+.a-rail__item {
+	white-space: nowrap;
+}
 .a-rail__desc {
 	color: #f55c47;
 	font-weight: 800;
@@ -86,67 +93,142 @@
 	font-size: 4.8vw;
 	white-space: nowrap;
 	line-height: 1.2;
-}
-.about__rail__inner {
 	border-bottom: 2px solid #f55c47;
 }
+.about__rail__inner {
+	/* animation: animate 4s linear; */
+	animation: a-rail 10s linear infinite;
+}
+.about__rail__inner-b {
+	animation: b-rail 10s linear infinite;
+}
+@keyframes a-rail {
+	0% {
+		transform: translateZ(0);
+	}
+	100% {
+		transform: translate3d(-60%, 0, 0);
+	}
+}
+@keyframes b-rail {
+	0% {
+		transform: translateX(-60%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+/* @keyframes animate {
+	0% {
+		transform: scaleX(0);
+		transform-origin: left;
+	}
+	50% {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+
+	100% {
+		transform: scaleX(1);
+		transform-origin: right;
+	}
+} */
+
 .about__icon.icon-c1 {
 	left: 8%;
 	top: 8%;
+	animation: iconup 5s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c2 {
 	left: 70%;
 	top: 10%;
+	animation: iconup 8s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c3 {
 	left: 50%;
 	top: 30%;
+	animation: iconup 9s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c4 {
 	left: 12%;
 	top: 50%;
+	animation: iconup 7s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c5 {
 	left: 29%;
 	top: 65%;
+	animation: iconup 6s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c6 {
 	left: 88%;
 	top: 90%;
+	animation: iconup 9s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c7 {
 	left: 90%;
 	top: 38%;
+	animation: iconup 8s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c8 {
 	left: 34%;
 	top: 45%;
+	animation: iconup 7s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c9 {
 	left: 65%;
 	top: 55%;
+	animation: iconup 5s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c10 {
 	left: 20%;
 	top: 78%;
+	animation: iconup 5s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c11 {
 	left: 59%;
 	top: 89%;
+	animation: iconup 7s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c12 {
 	left: 79%;
 	top: 2%;
+	animation: iconup 5s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c13 {
 	left: 41%;
 	top: 66%;
+	animation: iconup 8s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c14 {
 	left: 97%;
 	top: 20%;
+	animation: iconup 4s linear infinite;
+	will-change: top;
 }
 .about__icon.icon-c15 {
 	left: 0%;
 	top: 16%;
+	animation: iconup 9s linear infinite;
+	will-change: top;
+}
+@keyframes iconup {
+	0% {
+		top: 110%;
+	}
+	100% {
+		top: -10%;
+	}
 }

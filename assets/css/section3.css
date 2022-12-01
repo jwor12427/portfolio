@@ -6,13 +6,13 @@
 }
 .site__inner {
 	padding: 90px 0;
+	overflow: hidden;
 }
 .site__circle-t {
 	margin-bottom: 130px;
 }
 .site__circle-t .circle__wrap {
 	display: flex;
-	overflow: hidden;
 }
 .site__circle-t .circle__site {
 	flex: 0 0 auto;
@@ -23,7 +23,6 @@
 .site__circle-b .circle__wrap {
 	display: flex;
 	justify-content: flex-end;
-	overflow: hidden;
 }
 .site__circle-b .circle__site {
 	flex: 0 0 auto;
