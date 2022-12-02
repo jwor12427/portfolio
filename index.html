@@ -430,7 +430,7 @@
 				class="gray"
 			>
 				<div class="site__wrap-d">
-					<div class="site__inner-d">
+					<div class="site__inner-d site line">
 						<div class="site__left">
 							<div class="site__left__title">webstandrd site</div>
 							<div class="site__left__desc">
@@ -477,7 +477,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="site__inner-d sce">
+					<div class="site__inner-d sce site">
 						<div class="site__right">
 							<div class="site__ce">
 								<div class="site__back">
@@ -524,7 +524,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="site__inner-d">
+					<div class="site__inner-d site">
 						<div class="site__left">
 							<div class="site__left__title">php site</div>
 							<div class="site__left__desc">
@@ -569,7 +569,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="site__inner-d sce">
+					<div class="site__inner-d sce site last">
 						<div class="site__right">
 							<div class="site__ce">
 								<div class="site__back">
@@ -1376,6 +1376,17 @@
 					duration: 0.3,
 					left: e.pageX - 5,
 					top: e.pageY - 5,
+				});
+			});
+
+			let sites = gsap.utils.toArray(".site");
+
+			sites.forEach((site, i) => {
+				ScrollTrigger.create({
+					trigger: site,
+					start: "top",
+					pin: i === sites.length - 1 ? false : true,
+					pinSpacing: false,
 				});
 			});
 		</script>
