@@ -4,8 +4,10 @@
 	height: 100vh;
 	cursor: default;
 	position: relative;
+	overflow: hidden;
 }
 .main__wrap {
+	width: 100%;
 	padding-top: 70px;
 }
 
@@ -60,14 +62,13 @@
 .main__title {
 	font-family: "NexonLv2Gothic";
 	line-height: 1.4;
-
 	font-size: 1.1vw;
 	padding-left: 1.2rem;
 }
 .main__rail {
+	transform: translate(0, 0);
 	border-top: 2px solid #101010;
 	border-bottom: 2px solid #101010;
-	overflow: hidden;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -76,7 +77,6 @@
 	white-space: nowrap;
 	display: flex;
 	animation: rail2 30s linear infinite;
-	will-change: transform;
 }
 .rail__item {
 	display: flex;
