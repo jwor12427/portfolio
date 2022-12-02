@@ -1,11 +1,26 @@
 /** @format */
-
+/* font&reset */
 @import url("../css/fonts.css");
 @import url("../css/reset.css");
+
+/* header */
 @import url("../css/header.css");
+
+/* main */
 @import url("../css/section1.css");
+
+/* about */
 @import url("../css/section2.css");
+
+/* site */
 @import url("../css/section3.css");
 @import url("../css/section4.css");
+
+/* script */
 @import url("../css/section5.css");
+
+/* script&react */
 @import url("../css/section6.css");
+
+/* footer-contact */
+@import url("../css/footer.css");

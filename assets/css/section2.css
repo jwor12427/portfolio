@@ -66,6 +66,7 @@
 }
 
 .about__icon {
+	background-image: url(../img/about_icon01.svg);
 	width: 70px;
 	height: 70px;
 	position: absolute;
@@ -73,7 +74,9 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 1;
+}
+.about__icon.icon2 {
+	background-image: url(../img/about_icon02.svg);
 }
 
 .about__rail {

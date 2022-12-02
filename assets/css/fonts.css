@@ -97,15 +97,3 @@
 		url("../fonts/PPMonumentExtended-Black.ttf") format("truetype");
 	font-display: swap;
 }
-
-@font-face {
-	font-family: "Abel";
-	font-weight: 400;
-	font-style: normal;
-	src: url("../fonts/Abel-Regular.eot");
-	src: url("../fonts/Abel-Regular.eot?iefix") format("embedded-opentype"),
-		url("../fonts/Abel-Regular.woff2") format("woff2"),
-		url("../fonts/Abel-Regular.woff") format("woff"),
-		url("../fonts/Abel-Regular.ttf") format("truetype");
-	font-display: swap;
-}

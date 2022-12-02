@@ -17,3 +17,17 @@
 .detail__desc.ra {
 	color: #101010;
 }
+/* section7 */
+.c-rail__inner {
+	border-top: 2px solid #101010;
+	border-bottom: 2px solid #101010;
+	overflow: hidden;
+}
+.c-rail__line {
+	font-family: "PPMonument";
+	font-size: 4vw;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 90%;
+}

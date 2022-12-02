@@ -1,0 +1,100 @@
+/** @format */
+
+#section8 {
+	width: 100%;
+	height: calc(100vh - 70px);
+	position: relative;
+}
+
+.head__box {
+	border-bottom: 1px solid #101010;
+}
+.head__line {
+	display: flex;
+}
+.head__line .head__detail {
+	flex: 1;
+	border-right: 1px solid #101010;
+	padding: 1rem 1.5rem;
+}
+.head__line .head__detail:last-child {
+	border-right: none;
+}
+.head__line .head__detail a {
+	font-family: "PPMonument";
+	font-size: 1.1vw;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.contact__inner {
+	box-sizing: border-box;
+	text-transform: uppercase;
+	display: flex;
+}
+.contact__img {
+	width: 45%;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 5rem;
+}
+.contact__sub {
+	width: 25%;
+	padding: 1rem 2rem;
+	float: left;
+}
+.contact__sub h2,
+.contact__list h2 {
+	font-family: "PPMonument";
+	font-weight: 800;
+	font-size: 2vw;
+	margin-bottom: 1rem;
+}
+.contact__list h2 {
+	text-align: right;
+}
+.contact__sub p,
+.contact__list li a {
+	font-family: "NexonLv2Gothic";
+	font-weight: 300;
+	line-height: 1.4;
+	font-size: 1.1vw;
+}
+.contact__list li a {
+	text-align: right;
+	display: block;
+	margin-bottom: 5px;
+}
+.contact__list {
+	width: 18%;
+	padding: 1rem;
+	float: right;
+}
+
+.con__back {
+	width: 35vw;
+	height: 35vw;
+	position: absolute;
+	z-index: 10;
+}
+.con__front {
+	width: 35vw;
+	height: 35vw;
+	position: absolute;
+	z-index: 100;
+}
+
+.l-rail__item {
+	border-top: 2px solid #101010;
+	position: absolute;
+	transform: translate(0, 0);
+	left: 0;
+	bottom: 1%;
+	padding: 0.3rem 0.4rem;
+}
+.l-rail__item p {
+	font-size: 2vw;
+	font-weight: 800;
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-family: "PPMonument";
+}

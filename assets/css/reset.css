@@ -62,6 +62,9 @@ textarea {
 		돋움;
 }
 /* 배경색 */
+body {
+	background-color: #f0f0f0;
+}
 .gray {
 	background-color: #f0f0f0;
 }
