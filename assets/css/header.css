@@ -42,6 +42,12 @@
 	text-transform: uppercase;
 	line-height: 1.1;
 }
+.header__link a {
+	transition: all 0.3s;
+}
+.header__link a:hover {
+	color: #7c7c7c;
+}
 .header__badge {
 	display: inline-block;
 	background-color: #101010;

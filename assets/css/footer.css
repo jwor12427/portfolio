@@ -26,6 +26,10 @@
 	font-size: 1.1vw;
 	text-transform: uppercase;
 	font-weight: 300;
+	transition: all 0.3s;
+}
+.head__line .head__detail a:hover {
+	color: #858585;
 }
 .contact__inner {
 	box-sizing: border-box;
