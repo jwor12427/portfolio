@@ -9,6 +9,8 @@
 
 .head__box {
 	border-bottom: 1px solid #101010;
+	position: relative;
+	z-index: 10;
 }
 .head__line {
 	display: flex;
