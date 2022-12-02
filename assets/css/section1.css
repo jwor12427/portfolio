@@ -109,7 +109,7 @@
 		transform: translateZ(0);
 	}
 	100% {
-		transform: translate3d(-60%, 0, 0);
+		transform: translate3d(-65%, 0, 0);
 	}
 }
 
