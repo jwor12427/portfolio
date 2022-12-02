@@ -30,7 +30,7 @@
 	display: inline-block;
 	font-weight: 900;
 	text-transform: uppercase;
-	animation: rail 35s linear infinite;
+	animation: rail 45s linear infinite;
 }
 .main__ce {
 	width: 40%;
@@ -101,7 +101,7 @@
 		transform: translateZ(0);
 	}
 	100% {
-		transform: translate3d(-120%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
 	}
 }
 @keyframes rail2 {

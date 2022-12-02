@@ -94,7 +94,7 @@
 	position: absolute;
 	transform: translate(0, 0);
 	left: 0;
-	bottom: 1%;
+	bottom: 0.5%;
 	padding: 0.2vw 0.4vw;
 	overflow: hidden;
 }
