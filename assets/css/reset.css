@@ -168,6 +168,7 @@ button {
 ::-webkit-scrollbar-thumb:hover {
 	background: rgba(123, 128, 139, 0.589);
 }
+/* 마우스 */
 .coursor__wrap {
 	position: absolute;
 	left: 0;
@@ -180,4 +181,29 @@ button {
 	user-select: none;
 	pointer-events: none;
 	transition: transform 0.3s, opactiy 0.2s;
+}
+/* 삼각형 */
+.main__icon {
+	display: inline-block;
+	margin-right: 2.5rem;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-bottom: 9px solid #f55c47;
+	border-left: 0px solid transparent;
+	border-right: 9px solid transparent;
+	transform: rotate(90deg);
+	vertical-align: 3px;
+}
+.main__icon.black {
+	display: inline-block;
+	margin-right: 2.5rem;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-bottom: 9px solid #101010;
+	border-left: 0px solid transparent;
+	border-right: 9px solid transparent;
+	transform: rotate(90deg);
+	vertical-align: 3px;
 }

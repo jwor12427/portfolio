@@ -3,6 +3,7 @@
 	width: 100%;
 	height: 100vh;
 	cursor: default;
+	position: relative;
 }
 .main__wrap {
 	padding-top: 70px;
@@ -10,7 +11,7 @@
 
 .top {
 	width: 100%;
-	height: 78.5vh;
+	max-height: calc(100vh - 70px - 7.5vw);
 	position: relative;
 }
 .main__top {
@@ -19,22 +20,20 @@
 	font-size: 28vw;
 	overflow: hidden;
 	position: absolute;
+	white-space: nowrap;
 	left: 0;
 	top: 2%;
-	display: flex;
-	align-items: center;
 }
 .top__title {
 	display: inline-block;
 	font-weight: 900;
-	white-space: nowrap;
 	text-transform: uppercase;
 	animation: rail 35s linear infinite;
 }
 .main__ce {
 	width: 40%;
 	position: relative;
-	padding-top: 50px;
+	padding-top: 3vw;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
@@ -52,56 +51,32 @@
 	position: absolute;
 	z-index: 100;
 }
-.main__rail {
-	transform: translate(0px, 0px);
-	border-top: 2px solid #101010;
-	border-bottom: 2px solid #101010;
-	overflow: hidden;
-	background-color: #f0f0f0;
+.main__sub {
+	position: absolute;
+	left: 0;
+	bottom: 15%;
+	max-width: 21vw;
 }
 .main__title {
 	font-family: "NexonLv2Gothic";
 	line-height: 1.4;
-	position: absolute;
-	left: 0;
-	bottom: 4%;
-	min-width: 20rem;
+
 	font-size: 1.1vw;
 	padding-left: 1.2rem;
 }
-.main__icon {
-	display: inline-block;
-	margin-right: 2.5rem;
-	position: relative;
-	width: 0px;
-	height: 0px;
-	border-bottom: 9px solid #f55c47;
-	border-left: 0px solid transparent;
-	border-right: 9px solid transparent;
-	transform: rotate(90deg);
-	vertical-align: 3px;
-}
-.main__icon.black {
-	display: inline-block;
-	margin-right: 2.5rem;
-	position: relative;
-	width: 0px;
-	height: 0px;
-	border-bottom: 9px solid #101010;
-	border-left: 0px solid transparent;
-	border-right: 9px solid transparent;
-	transform: rotate(90deg);
-	vertical-align: 3px;
+.main__rail {
+	border-top: 2px solid #101010;
+	border-bottom: 2px solid #101010;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 .rail__inner {
 	white-space: nowrap;
 	display: flex;
+	animation: rail2 30s linear infinite;
 	will-change: transform;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-name: rail2;
-	animation-duration: 20s;
-	height: 7vw;
 }
 .rail__item {
 	display: flex;
@@ -111,7 +86,7 @@
 	font-weight: 800;
 	text-transform: uppercase;
 	font-family: "PPMonument";
-	font-size: 5vw;
+	font-size: 4vw;
 	white-space: nowrap;
 	padding-right: 2rem;
 }
@@ -119,7 +94,7 @@
 	padding-right: 2rem;
 }
 .rail__icon svg {
-	width: 6vw;
+	width: 5vw;
 }
 @keyframes rail {
 	0% {
@@ -134,7 +109,7 @@
 		transform: translateZ(0);
 	}
 	100% {
-		transform: translate3d(-164%, 0, 0);
+		transform: translate3d(-60%, 0, 0);
 	}
 }
 

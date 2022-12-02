@@ -7,7 +7,7 @@
 	width: 100%;
 	height: 70px;
 	border-bottom: 1px solid #101010;
-	padding: 0 1rem;
+	padding: 0 1vw;
 	z-index: 1000;
 	background-color: #f0f0f0;
 }
@@ -45,10 +45,10 @@
 .header__badge {
 	display: inline-block;
 	background-color: #101010;
-	padding: 0.2rem 0.7rem;
+	padding: 0.2vw 0.7vw;
 	color: #f0f0f0;
 	border-radius: 20px;
-	font-size: 1vw;
+	font-size: 0.7vw;
 	margin-left: 5px;
 	text-align: center;
 }
