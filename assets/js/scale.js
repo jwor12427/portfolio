@@ -12,7 +12,7 @@ ScrollTrigger.create({
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,-30px,0)",
@@ -25,13 +25,13 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".r2",
 		{
-			scale: (1.4, 1.4),
+			scale: (1.3, 1.3),
 			opacity: 0,
 			transformOrigin: "900px 18px",
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,-25px,0)",
@@ -50,7 +50,7 @@ ScrollTrigger.create({
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,-20px,0)",
@@ -63,13 +63,13 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".r4",
 		{
-			scale: (1.4, 1.4),
+			scale: (1.3, 1.3),
 			opacity: 0,
 			transformOrigin: "900px 18px",
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,-15px,0)",
@@ -88,7 +88,7 @@ ScrollTrigger.create({
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,-10px,0)",
@@ -101,13 +101,13 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".r6",
 		{
-			scale: (1.4, 1.4),
+			scale: (1.3, 1.3),
 			opacity: 0,
 			transformOrigin: "900px 18px",
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,-5px,0)",
@@ -126,7 +126,7 @@ ScrollTrigger.create({
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,0,0)",
@@ -139,13 +139,13 @@ ScrollTrigger.create({
 	animation: gsap.fromTo(
 		".r8",
 		{
-			scale: (1.4, 1.4),
+			scale: (1.3, 1.3),
 			opacity: 0,
 			transformOrigin: "900px 18px",
 			transform: "translate(0,50px)",
 		},
 		{
-			scale: (0.94, 0.94),
+			scale: 1,
 			opacity: 1,
 			transformOrigin: "50% 0%",
 			transform: "translate3d(0,5px,0)",
