@@ -27,14 +27,17 @@
 	align-items: center;
 }
 .about__img01 {
+	width: 48%;
+}
+.about__img01 img {
 	width: 30vw;
 	height: 30vw;
 	margin-left: 70px;
 	z-index: 10;
 }
 .about__img02 {
-	width: 25vw;
-	height: 25vw;
+	width: 27vw;
+	height: 27vw;
 	transform: rotate(-30deg);
 	z-index: 10;
 	position: absolute;
@@ -43,7 +46,7 @@
 }
 .about__desc {
 	position: relative;
-	width: 50%;
+	width: 48%;
 	z-index: 10;
 }
 .about__desc.left {
