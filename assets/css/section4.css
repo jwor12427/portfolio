@@ -13,8 +13,9 @@
 	background-color: #f0f0f0;
 }
 .line {
-	border-bottom: 2px solid #101010;
-	border-top: none;
+	/* border-bottom: 2px solid #101010; */
+	/* border-top: none; */
+	box-sizing: border-box;
 }
 .site__left {
 	width: 50%;

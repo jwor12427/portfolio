@@ -61,7 +61,7 @@
 .site__detail {
 	height: 6vh;
 	padding: 6rem 2rem;
-	border-bottom: 2px solid #101010;
+	/* border-bottom: 2px solid #101010; */
 	position: relative;
 	box-sizing: border-box;
 }

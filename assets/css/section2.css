@@ -27,14 +27,14 @@
 	align-items: center;
 }
 .about__img01 {
-	width: 600px;
-	height: 600px;
+	width: 30vw;
+	height: 30vw;
 	margin-left: 70px;
 	z-index: 10;
 }
 .about__img02 {
-	width: 480px;
-	height: 480px;
+	width: 25vw;
+	height: 25vw;
 	transform: rotate(-30deg);
 	z-index: 10;
 	position: absolute;
