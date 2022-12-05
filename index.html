@@ -398,8 +398,8 @@
 								<div class="conts__inner">
 									<div class="conts__item">
 										<div class="conts__line">
-											webstandard site webstandard site webstandard site
-											webstandard site
+											webstandard site&nbsp;webstandard site&nbsp;webstandard
+											site &nbsp;webstandard site
 										</div>
 									</div>
 								</div>
@@ -459,7 +459,8 @@
 								<div class="conts__inner">
 									<div class="conts__item">
 										<div class="conts__line">
-											webresponsive site webresponsive site webresponsive site
+											webresponsive site&nbsp;webresponsive
+											site&nbsp;webresponsive site&nbsp;webresponsive site
 										</div>
 									</div>
 								</div>
@@ -483,8 +484,9 @@
 								<div class="conts__inner">
 									<div class="conts__item">
 										<div class="conts__line">
-											php site php site php site php site php site php site php
-											site
+											php site&nbsp;php site&nbsp;php site&nbsp;php
+											site&nbsp;php site&nbsp;php site&nbsp;php site&nbsp;php
+											site&nbsp;php site
 										</div>
 									</div>
 								</div>
@@ -546,8 +548,9 @@
 								<div class="conts__inner">
 									<div class="conts__item">
 										<div class="conts__line">
-											php site php site php site php site php site php site php
-											site php site
+											&nbsp;php site&nbsp;php site&nbsp;php site&nbsp;php
+											site&nbsp;php site&nbsp;php site&nbsp;php site&nbsp;php
+											site&nbsp;php site
 										</div>
 									</div>
 								</div>
@@ -1501,15 +1504,21 @@
 			});
 
 			//스크립트 부분(마우스 링크바로가기)
-			const script = document.querySelector(".script__behind01");
-			const back = document.querySelector(".script01");
-			back.addEventListener("mouseenter", () => {
-				script.style.display = "block";
-				back.style.display = "none";
+
+			let tl2 = gsap.timeline();
+			tl2.to(".script__behind01", {
+				scale: 1.0,
+				duration: 0.6,
+				stagger: 0.1,
+				ease: "back.out(1.7)",
 			});
-			script.addEventListener("mouseleave", () => {
-				script.style.display = "none";
-				back.style.display = "block";
+			const script = document.querySelector(".script__behind01");
+			const back = document.querySelector(".script");
+			back.addEventListener("mouseenter", () => {
+				tl2.play();
+			});
+			back.addEventListener("mouseleave", () => {
+				tl2.reverse();
 			});
 		</script>
 		<!-- scale2 -->
