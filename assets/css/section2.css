@@ -32,6 +32,7 @@
 .about__img01 img {
 	width: 30vw;
 	height: 30vw;
+	position: relative;
 	margin-left: 70px;
 	z-index: 10;
 }
