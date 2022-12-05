@@ -67,8 +67,7 @@
 .conts__inner {
 	overflow: hidden;
 }
-.conts__item {
-}
+
 .conts__line {
 	font-family: "PPMonument";
 	font-weight: 800;
@@ -90,12 +89,12 @@
 	padding: 60px 0;
 }
 .site__back {
-	width: 650px;
+	width: 38vw;
 	position: absolute;
 	z-index: 10;
 }
-.site__pron {
-	width: 650px;
+.site__fron {
+	width: 38vw;
 	position: absolute;
 	z-index: 100;
 }
