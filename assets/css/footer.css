@@ -107,3 +107,11 @@
 	white-space: nowrap;
 	font-family: "PPMonument";
 }
+@keyframes iconup {
+	0% {
+		top: 110%;
+	}
+	100% {
+		top: -10%;
+	}
+}
