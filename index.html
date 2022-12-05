@@ -1474,15 +1474,15 @@
 			sites.forEach((site, i) => {
 				ScrollTrigger.create({
 					trigger: site,
-					start: "top 90px",
+					start: "top 70px",
 					pin: i === sites.length - 1 ? false : true,
-					end: "bottom 90px",
+					end: "bottom 70px",
 					pinSpacing: false,
 					scrub: 1,
 				});
 			});
 
-			//스크립트 부분
+			//스크립트 부분(마우스 링크바로가기)
 			const script = document.querySelector(".script__behind01");
 			const back = document.querySelector(".script01");
 			back.addEventListener("mouseenter", () => {
