@@ -167,6 +167,7 @@
 	.site__inner-d {
 		flex-direction: column;
 		text-align: center;
+		overflow: hidden;
 	}
 	.site__inner-d.sce {
 		flex-direction: column-reverse;
@@ -191,9 +192,7 @@
 	.site__left__desc {
 		max-width: 100%;
 	}
-	.site__inner-d {
-		overflow: hidden;
-	}
+
 	.site__ce {
 		padding: 0;
 	}
