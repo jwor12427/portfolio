@@ -19,7 +19,6 @@
 }
 /* section7 */
 .c-rail__inner {
-	border-top: 2px solid #101010;
 	border-bottom: 2px solid #101010;
 	overflow: hidden;
 	width: 100%;
