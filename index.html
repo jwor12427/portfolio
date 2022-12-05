@@ -635,8 +635,12 @@
 									/>
 								</div>
 								<div class="script__behind01">
+									<img
+										src="assets/img/script01_be.png"
+										alt="사이트 바로가기"
+									/>
 									<div class="behind__desc">
-										<div class="be__title">게임이펙트</div>
+										<div class="be__title">게임이펙트 사이트</div>
 										<a
 											href="#"
 											class="site__go"
@@ -1476,6 +1480,18 @@
 					pinSpacing: false,
 					scrub: 1,
 				});
+			});
+
+			//스크립트 부분
+			const script = document.querySelector(".script__behind01");
+			const back = document.querySelector(".script01");
+			back.addEventListener("mouseenter", () => {
+				script.style.display = "block";
+				back.style.display = "none";
+			});
+			script.addEventListener("mouseleave", () => {
+				script.style.display = "none";
+				back.style.display = "block";
 			});
 		</script>
 	</body>

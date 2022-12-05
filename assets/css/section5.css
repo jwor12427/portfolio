@@ -115,6 +115,7 @@
 	width: 39vw;
 	position: absolute;
 	z-index: 100;
+	transition: all 0.3s;
 }
 .script__cont02 {
 	width: 45%;
@@ -129,27 +130,41 @@
 	position: absolute;
 	z-index: 100;
 }
+.script__behind01 {
+	width: 39vw;
+	height: 39vw;
+	position: absolute;
+	z-index: 100;
+	transition: all 0.3s;
+	display: none;
+}
 
 .behind__desc {
 	position: absolute;
 	top: 40%;
-	left: 45%;
+	left: 31%;
 	box-sizing: border-box;
-	display: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .be__title {
+	text-align: center;
 	color: #fff;
-	font-size: 20px;
+	font-size: 2.2vw;
 	font-weight: 800;
 	font-family: "NexonLv2Gothic";
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .site__go {
-	display: flex;
-	align-items: center;
 	text-align: center;
+	width: 7vw;
+	font-family: "NexonLv2Gothic";
+	font-size: 1vw;
+	display: block;
 	background-color: #fff;
-	padding: 0.2rem 1rem;
+	padding: 0.5vw 1.2vw;
+	border-radius: 10px;
 }
 .section3 {
 	width: 100%;
