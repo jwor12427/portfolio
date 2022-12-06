@@ -1,0 +1,253 @@
+/** @format */
+#section2 {
+	width: 100%;
+	cursor: default;
+}
+.about__wrap {
+	width: 100%;
+	/* height: 150vh; */
+	overflow: hidden;
+}
+.about__inner {
+	/* padding: 150px 80px; */
+	padding: 12vw 5vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.about__top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	z-index: 10;
+}
+.about__bottom {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.about__img01 {
+	width: 48%;
+}
+.about__img01 img {
+	width: 30vw;
+	height: 30vw;
+	position: relative;
+	margin-left: 70px;
+	z-index: 10;
+}
+.about__img02 {
+	width: 27vw;
+	height: 27vw;
+	transform: rotate(-30deg);
+	z-index: 10;
+	position: absolute;
+	right: 10%;
+	bottom: 20%;
+}
+.about__desc {
+	position: relative;
+	width: 48%;
+	z-index: 10;
+}
+.about__desc.left {
+	margin-right: 15rem;
+	z-index: 10;
+}
+.about__desc .about__title {
+	font-family: "PPMonument";
+	font-weight: 400;
+	font-size: 2.5vw;
+	text-transform: uppercase;
+	margin-bottom: 3vw;
+}
+.about__desc .about__me {
+	font-family: "NexonLv2Gothic";
+	font-weight: 300;
+	line-height: 150%;
+	width: 600px;
+	font-size: 1.2vw;
+}
+
+.about__icon {
+	background-image: url(../img/about_icon01.svg);
+	width: 4.1vw;
+	height: 4.1vw;
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.about__icon.icon2 {
+	background-image: url(../img/about_icon02.svg);
+}
+
+.about__rail {
+	border-top: 2px solid #f55c47;
+	/* border-bottom: 2px solid #f55c47; */
+	transform: translate(0px, 0px);
+	overflow: hidden;
+}
+.a-rail__item {
+	white-space: nowrap;
+}
+.a-rail__desc {
+	color: #f55c47;
+	font-weight: 800;
+	font-family: "PPMonument";
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 4.8vw;
+	white-space: nowrap;
+	line-height: 1.2;
+	border-bottom: 2px solid #f55c47;
+}
+.about__rail__inner {
+	/* animation: animate 4s linear; */
+	animation: a-rail 7s linear infinite;
+}
+.about__rail__inner-b {
+	animation: b-rail 8s linear infinite;
+}
+@keyframes a-rail {
+	0% {
+		transform: translateZ(0);
+	}
+	100% {
+		transform: translate3d(-70%, 0, 0);
+	}
+}
+@keyframes b-rail {
+	0% {
+		transform: translateX(-70%);
+	}
+	100% {
+		transform: translate3d(0%, 0, 0);
+	}
+}
+
+.about__icon.icon-c1 {
+	left: 8%;
+	top: 8%;
+	animation: iconup 5s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c2 {
+	left: 70%;
+	top: 10%;
+	animation: iconup 8s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c3 {
+	left: 50%;
+	top: 30%;
+	animation: iconup 9s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c4 {
+	left: 12%;
+	top: 50%;
+	animation: iconup 7s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c5 {
+	left: 29%;
+	top: 65%;
+	animation: iconup 10s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c6 {
+	left: 88%;
+	top: 90%;
+	animation: iconup 9s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c7 {
+	left: 90%;
+	top: 38%;
+	animation: iconup 8s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c8 {
+	left: 34%;
+	top: 45%;
+	animation: iconup 12s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c9 {
+	left: 65%;
+	top: 55%;
+	animation: iconup 5s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c10 {
+	left: 20%;
+	top: 78%;
+	animation: iconup 5s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c11 {
+	left: 59%;
+	top: 89%;
+	animation: iconup 7s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c12 {
+	left: 79%;
+	top: 2%;
+	animation: iconup 11s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c13 {
+	left: 41%;
+	top: 66%;
+	animation: iconup 8s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c14 {
+	left: 97%;
+	top: 20%;
+	animation: iconup 4s linear infinite;
+	will-change: top;
+}
+.about__icon.icon-c15 {
+	left: 0%;
+	top: 16%;
+	animation: iconup 9s linear infinite;
+	will-change: top;
+}
+@keyframes iconup {
+	0% {
+		top: 110%;
+	}
+	100% {
+		top: -10%;
+	}
+}
+/* 미디어쿼리 */
+@media (max-width: 860px) {
+	.about__img01 img {
+		margin-left: 0;
+	}
+}
+@media (max-width: 468px) {
+	.about__desc .about__me {
+		height: 120%;
+	}
+	.about__desc.left {
+		margin-right: 0;
+	}
+	.about__img01 img {
+		width: 180px;
+		height: 180px;
+		margin-left: -50px;
+	}
+	.about__img02 {
+		width: 180px;
+		height: 180px;
+		right: -10%;
+	}
+}

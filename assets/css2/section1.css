@@ -5,17 +5,24 @@
 	cursor: default;
 	position: relative;
 	overflow: hidden;
+	background-color: #101010;
 }
 .main__wrap {
 	width: 100%;
 	padding-top: 70px;
 }
-
-.top {
+.main__box {
 	width: 100%;
-	max-height: calc(100vh - 70px - 7.5vw);
+	height: calc(100vh - 70px - 6.8vw);
+	position: relative;
+	display: flex;
+}
+.main__box .top {
+	width: 100%;
+	background-color: #f0f0f0;
 	position: relative;
 }
+
 .main__top {
 	width: 100%;
 	font-family: "PPMonument";
@@ -24,16 +31,17 @@
 	position: absolute;
 	white-space: nowrap;
 	left: 0;
-	top: 2%;
+	top: 0;
 }
 .top__title {
 	display: inline-block;
 	font-weight: 900;
 	text-transform: uppercase;
-	animation: rail 45s linear infinite;
+	animation: rail 30s linear infinite;
 }
 .main__ce {
-	width: 33%;
+	display: flex;
+	justify-content: center;
 	position: relative;
 	padding-top: 3vw;
 	margin: 0 auto;
@@ -44,7 +52,7 @@
 	height: 35vw;
 	position: absolute;
 	z-index: 10;
-	animation: rotateIt 18s linear infinite;
+	animation: rotateIt 20s linear infinite;
 	overflow: hidden;
 }
 .frot {
@@ -53,13 +61,14 @@
 	position: absolute;
 	z-index: 100;
 }
-.main__sub {
+.top .main__sub {
+	width: 100%;
 	position: absolute;
 	left: 0;
-	bottom: 15%;
-	/* max-width: 21vw; */
+	bottom: 7%;
 }
-.main__title {
+.main__sub .main__title {
+	display: block;
 	font-family: "NexonLv2Gothic";
 	line-height: 1.4;
 	font-size: 1vw;
@@ -72,11 +81,11 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	background-color: #f0f0f0;
 }
 .rail__inner {
 	white-space: nowrap;
 	display: flex;
-	animation: rail2 30s linear infinite;
 }
 .rail__item {
 	display: flex;
@@ -90,9 +99,11 @@
 	font-size: 4vw;
 	white-space: nowrap;
 	padding-right: 1vw;
+	transform: translateX(-1000px);
 }
 .rail__icon {
 	padding-right: 1vw;
+	transform: translateX(-1000px);
 }
 .rail__icon svg {
 	width: 5vw;
@@ -106,8 +117,43 @@
 		transform: rotate(360deg);
 	}
 }
-@media (max-width: 900px) {
-	#section1 {
-		height: 100vw;
+
+@media (max-width: 1000px) {
+	/* #section1 {
+		height: 70vw;
+	} */
+	.main__ce {
+		padding-top: 30vw;
+		display: flex;
+		justify-content: center;
+	}
+	.back {
+		width: 450px;
+		height: 450px;
+	}
+	.frot {
+		width: 450px;
+		height: 450px;
+	}
+}
+@media (max-width: 550px) {
+	.rail__item {
+		animation: rail2 20s linear infinite;
+	}
+}
+@keyframes rail {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translate3d(-79%, 0, 0);
+	}
+}
+@keyframes rail2 {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translate3d(300%, 0, 0);
 	}
 }

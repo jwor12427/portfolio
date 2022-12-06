@@ -62,9 +62,9 @@ textarea {
 		돋움;
 }
 /* 배경색 */
-body {
-	background-color: #f0f0f0;
-}
+/* body {
+	background-color: #000;
+} */
 .gray {
 	background-color: #f0f0f0;
 }
@@ -157,7 +157,7 @@ button {
 	height: 7px;
 }
 ::-webkit-scrollbar-track {
-	background: transparent;
+	background: #f0f0f0;
 }
 ::-webkit-scrollbar-thumb {
 	background-color: #101010;
@@ -189,9 +189,9 @@ button {
 	position: relative;
 	width: 0px;
 	height: 0px;
-	border-bottom: 9px solid #f55c47;
+	border-bottom: 0.9vw solid #f55c47;
 	border-left: 0px solid transparent;
-	border-right: 9px solid transparent;
+	border-right: 0.9vw solid transparent;
 	transform: rotate(90deg);
 	vertical-align: 3px;
 }
@@ -207,10 +207,15 @@ button {
 	transform: rotate(90deg);
 	vertical-align: 3px;
 }
-@media (max-width: 530px) {
+/* @media (max-width: 750px) {
 	.main__icon {
-		border-bottom: 6px solid #f55c47;
+		border-bottom: 5px solid #f55c47;
 		border-left: 0px solid transparent;
-		border-right: 6px solid transparent;
+		border-right: 5px solid transparent;
 	}
-}
+	.main__icon.black {
+		border-bottom: 5px solid #101010;
+		border-left: 0px solid transparent;
+		border-right: 5px solid transparent;
+	}
+} */
