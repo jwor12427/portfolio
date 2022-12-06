@@ -71,14 +71,14 @@
 }
 .conts__item {
 	will-change: transform;
-	animation: c-rail 5s linear infinite;
+	animation: c-rail 10s linear infinite;
 }
 @keyframes c-rail {
 	from {
 		transform: translateX(0);
 	}
 	to {
-		transform: translateX(-50%);
+		transform: translateX(-100%);
 	}
 }
 .conts__line {
@@ -105,6 +105,7 @@
 	width: 38vw;
 	position: absolute;
 	z-index: 10;
+	animation: rotateIt 18s linear infinite;
 }
 .site__fron {
 	width: 38vw;

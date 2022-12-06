@@ -49,7 +49,7 @@
 	font-weight: 900;
 	white-space: nowrap;
 	text-transform: uppercase;
-	animation: c-rail 50s linear infinite;
+	animation: c-rail 60s linear infinite;
 }
 .rail-j {
 	border-top: 2px solid #101010;
