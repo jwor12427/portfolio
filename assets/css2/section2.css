@@ -10,7 +10,7 @@
 }
 .about__inner {
 	/* padding: 150px 80px; */
-	padding: 12vw 5vw;
+	padding: 10vw 5vw;
 	position: relative;
 	overflow: hidden;
 }
@@ -68,6 +68,8 @@
 	line-height: 150%;
 	width: 600px;
 	font-size: 1.2vw;
+	z-index: 10;
+	position: relative;
 }
 
 .about__icon {
@@ -233,9 +235,9 @@
 		margin-left: 0;
 	}
 }
-@media (max-width: 468px) {
+@media (max-width: 490px) {
 	.about__desc .about__me {
-		height: 120%;
+		line-height: 1.2;
 	}
 	.about__desc.left {
 		margin-right: 0;
@@ -243,11 +245,12 @@
 	.about__img01 img {
 		width: 180px;
 		height: 180px;
-		margin-left: -50px;
+		right: 20%;
 	}
 	.about__img02 {
 		width: 170px;
 		height: 170px;
 		right: -3%;
+		bottom: auto;
 	}
 }

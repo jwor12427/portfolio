@@ -1,0 +1,80 @@
+/** @format */
+
+#section3 {
+	width: 100%;
+	/* height: 200vh; */
+}
+.site__inner {
+	padding: 5vw 0;
+	overflow: hidden;
+}
+.site__circle-t {
+	margin-bottom: 5vw;
+}
+.site__circle-t .circle__wrap {
+	display: flex;
+}
+.site__circle-t .circle__site {
+	flex: 0 0 auto;
+	width: 25%;
+	margin-right: 5rem;
+	box-sizing: border-box;
+}
+.site__circle-b .circle__wrap {
+	display: flex;
+	justify-content: flex-end;
+}
+.site__circle-b .circle__site {
+	flex: 0 0 auto;
+	width: 25%;
+	margin-left: 5rem;
+	box-sizing: border-box;
+}
+.circle__site img {
+	border: 2px solid #f55c47;
+	border-radius: 50%;
+}
+.s-rail__conts {
+	position: relative;
+	width: 100%;
+	height: 30vh;
+	border-top: 2px solid #f55c47;
+	border-bottom: 2px solid #101010;
+	padding: 0.42rem 0;
+	overflow: hidden;
+}
+.s-rail__inner {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+}
+.s-rail__line {
+	font-family: "PPMonument";
+	font-weight: 800;
+	font-size: 4rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+	line-height: 90%;
+	transform-origin: 50% 0%;
+}
+.site__detail {
+	height: 6vh;
+	padding: 6rem 2rem;
+	position: relative;
+	box-sizing: border-box;
+}
+.site__detail__desc {
+	width: 50%;
+	position: absolute;
+	top: 20%;
+	right: 0;
+}
+.detail__desc {
+	width: 90%;
+	font-size: 20px;
+	font-family: "NexonLv2Gothic";
+	font-weight: 300;
+	line-height: 140%;
+	word-break: keep-all;
+}

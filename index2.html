@@ -270,6 +270,116 @@
 				</div>
 			</section>
 			<!-- //section2 -->
+
+			<section
+				id="section3"
+				class="gray"
+			>
+				<div class="site__wrap">
+					<div class="site__inner">
+						<div class="site__circle-t">
+							<div class="circle__wrap">
+								<div class="circle__site">
+									<img
+										src="assets/img/stie_t_c01.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/stie_t_c02.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/stie_t_c03.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/stie_t_c04.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/stie_t_c01.png"
+										alt="사이트사진"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="site__circle-b">
+							<div class="circle__wrap">
+								<div class="circle__site">
+									<img
+										src="assets/img/site_b_c01.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/site_b_c02.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/site_b_c03.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/site_b_c04.png"
+										alt="사이트사진"
+									/>
+								</div>
+								<div class="circle__site">
+									<img
+										src="assets/img/site_b_c01.png"
+										alt="사이트사진"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s-rail__conts">
+						<div class="s-rail__inner">
+							<div class="s-rail__line v1">
+								site coding site coding site coding site coding site coding
+							</div>
+							<div class="s-rail__line v2">
+								coding site coding site coding site coding site coding site
+							</div>
+							<div class="s-rail__line v3">
+								site coding site coding site coding site coding site coding
+							</div>
+							<div class="s-rail__line v4">
+								coding site coding site coding site coding site coding
+							</div>
+							<div class="s-rail__line v5">
+								site coding site coding site coding site coding site coding
+							</div>
+						</div>
+					</div>
+					<div class="site__detail">
+						<div class="site__detail__desc">
+							<span class="main__icon"></span>
+							<em class="detail__desc">
+								제가 만든 웹사이트를 소개합니다! <br />반응형 작업과 웹표준을
+								준수하며 제작한 사이트 입니다. jvavscript, php 등을 다양하게
+								사용하여 웹사이트를 만들어 보았습니다. css와 scss를 사용하여
+								제작했고, 바로가기를 누르시면 사이트를 직접 확인하실 수
+								있습니다.</em
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- //section3 -->
 		</main>
 		<!-- //main -->
 		<footer></footer>
@@ -301,6 +411,22 @@
 							scrub: 1,
 						},
 						x: -150,
+					});
+					gsap.to(".about__img01", {
+						scrollTrigger: {
+							trigger: ".about__img01",
+							scrub: 1,
+						},
+						transform: "rotate(-15deg)",
+						zIndex: 100,
+					});
+					gsap.to(".about__img02", {
+						scrollTrigger: {
+							trigger: ".about__img02",
+							scrub: 1,
+						},
+						transform: "scale(1.24)",
+						zIndex: 100,
 					});
 				},
 			});
