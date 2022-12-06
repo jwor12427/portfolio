@@ -1,0 +1,216 @@
+/**
+ * /* 여백 초기화
+ *
+ * @format
+ */
+
+body,
+div,
+dl,
+dd,
+dt,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+fieldset,
+form,
+legend,
+p,
+blockquote,
+th,
+td,
+input,
+button,
+figure,
+figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+/* 시멘틱 태그 초기화 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+/* 폰트 초기화 */
+body,
+button,
+input,
+select,
+table,
+textarea {
+	color: #000;
+	font-family: "AppleSDGothicNeo-Regular", "Malgun Gothic", "맑은 고딕", dotum,
+		돋움;
+}
+/* 배경색 */
+body {
+	background-color: #f0f0f0;
+}
+.gray {
+	background-color: #f0f0f0;
+}
+.red {
+	background-color: #f55c47;
+}
+/* 가로모드 초기화 */
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* 링크 초기화 */
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* 목록 초기화 */
+li,
+ol,
+ul {
+	list-style: none;
+}
+
+/* 제목 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+/* 폰트 스타일 초기화 */
+em,
+address {
+	font-style: normal;
+}
+
+/* 이미지 초기화 */
+img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* 보더 초기화 */
+img,
+fieldset,
+button {
+	border: 0;
+}
+
+/* 클리어 픽스 */
+.clearfix {
+	zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	line-height: 0;
+}
+.clearfix::after {
+	clear: both;
+}
+
+/* 블라인드 효과 */
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+/* 이미지 대체(ir) 효과 */
+.ir {
+	display: block;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -9999px;
+}
+/* scroll */
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #101010;
+	border-radius: 10px;
+	margin: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(123, 128, 139, 0.589);
+}
+/* 마우스 */
+.coursor__wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 9999;
+	border-radius: 50%;
+	background: #f55c47;
+	user-select: none;
+	pointer-events: none;
+	transition: transform 0.3s, opactiy 0.2s;
+}
+/* 삼각형 */
+.main__icon {
+	display: inline-block;
+	margin-right: 2.5vw;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-bottom: 9px solid #f55c47;
+	border-left: 0px solid transparent;
+	border-right: 9px solid transparent;
+	transform: rotate(90deg);
+	vertical-align: 3px;
+}
+.main__icon.black {
+	display: inline-block;
+	margin-right: 2.5rem;
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-bottom: 9px solid #101010;
+	border-left: 0px solid transparent;
+	border-right: 9px solid transparent;
+	transform: rotate(90deg);
+	vertical-align: 3px;
+}
+@media (max-width: 530px) {
+	.main__icon {
+		border-bottom: 6px solid #f55c47;
+		border-left: 0px solid transparent;
+		border-right: 6px solid transparent;
+	}
+}

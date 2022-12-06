@@ -1,0 +1,113 @@
+/** @format */
+#section1 {
+	width: 100%;
+	height: 100vh;
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+}
+.main__wrap {
+	width: 100%;
+	padding-top: 70px;
+}
+
+.top {
+	width: 100%;
+	max-height: calc(100vh - 70px - 7.5vw);
+	position: relative;
+}
+.main__top {
+	width: 100%;
+	font-family: "PPMonument";
+	font-size: 28vw;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	left: 0;
+	top: 2%;
+}
+.top__title {
+	display: inline-block;
+	font-weight: 900;
+	text-transform: uppercase;
+	animation: rail 45s linear infinite;
+}
+.main__ce {
+	width: 33%;
+	position: relative;
+	padding-top: 3vw;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.back {
+	width: 35vw;
+	height: 35vw;
+	position: absolute;
+	z-index: 10;
+	animation: rotateIt 18s linear infinite;
+	overflow: hidden;
+}
+.frot {
+	width: 35vw;
+	height: 35vw;
+	position: absolute;
+	z-index: 100;
+}
+.main__sub {
+	position: absolute;
+	left: 0;
+	bottom: 15%;
+	/* max-width: 21vw; */
+}
+.main__title {
+	font-family: "NexonLv2Gothic";
+	line-height: 1.4;
+	font-size: 1vw;
+	padding-left: 1.4vw;
+}
+.main__rail {
+	transform: translate(0, 0);
+	border-top: 2px solid #101010;
+	border-bottom: 2px solid #101010;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.rail__inner {
+	white-space: nowrap;
+	display: flex;
+	animation: rail2 30s linear infinite;
+}
+.rail__item {
+	display: flex;
+	align-items: center;
+	padding: 0.5vw;
+}
+.rail__desc {
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: "PPMonument";
+	font-size: 4vw;
+	white-space: nowrap;
+	padding-right: 1vw;
+}
+.rail__icon {
+	padding-right: 1vw;
+}
+.rail__icon svg {
+	width: 5vw;
+	height: 5vw;
+}
+@keyframes rotateIt {
+	/* 0% {
+		transform: rotate(0deg);
+	} */
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media (max-width: 900px) {
+	#section1 {
+		height: 100vw;
+	}
+}
