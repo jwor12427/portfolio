@@ -27,7 +27,7 @@ tl.fromTo(
 		opacity: 1,
 		transform: "translate3d(0, 0, 0)",
 		transformOrigin: "top",
-		ease: "Bounce.easeOut",
+		ease: "Sine.easeInOut",
 		duration: 1,
 	}
 );
@@ -197,7 +197,7 @@ mm.add("(min-width: 560px)", () => {
 					{ border: "2px solid #f55c47", transform: "scale(1)" },
 					{
 						border: "3px solid",
-						transform: "scale(1.2)",
+						transform: "scale(1.1)",
 						duration: 0.5,
 						ease: "Cubic.easeIn",
 						onComplete: () => {
@@ -247,88 +247,92 @@ gsap.to(".site__circle-b", {
 });
 
 //글씨 효과 - site coding
-ScrollTrigger.create({
-	trigger: ".s-rail__inner",
-	scrub: 1,
-	animation: gsap.fromTo(
-		".v1",
-		{
-			scale: 1.35,
-			opacity: 0,
-			transform: "translate3d(0,0,0)",
-		},
-		{
-			scale: 0.976,
-			opacity: 1,
-			transform: "translate3d(0,-30px,0)",
-		}
-	),
-});
-ScrollTrigger.create({
-	trigger: ".s-rail__inner",
-	scrub: 1,
-	animation: gsap.fromTo(
-		".v2",
-		{
-			scale: 1.35,
-			opacity: 0,
-			transform: "translate3d(-20px,0,0)",
-		},
-		{
-			scale: 0.96,
-			opacity: 1,
-			transform: "translate3d(-20px,-20px,0)",
-		}
-	),
-});
-ScrollTrigger.create({
-	trigger: ".s-rail__inner",
-	scrub: 1,
-	animation: gsap.fromTo(
-		".v3",
-		{
-			scale: 1.35,
-			opacity: 0,
-			transform: "translate3d(0,0,0)",
-		},
-		{
-			scale: 0.96,
-			opacity: 1,
-			transform: "translate3d(0,-10px,0)",
-		}
-	),
-});
-ScrollTrigger.create({
-	trigger: ".s-rail__inner",
-	scrub: 1,
-	animation: gsap.fromTo(
-		".v4",
-		{
-			scale: 1.35,
-			opacity: 0,
-			transform: "translate3d(-20px,0,0)",
-		},
-		{
-			scale: 0.96,
-			opacity: 1,
-			transform: "translate3d(-20px,0,0)",
-		}
-	),
-});
-ScrollTrigger.create({
-	trigger: ".s-rail__inner",
-	scrub: 1,
-	animation: gsap.fromTo(
-		".v5",
-		{
-			scale: 1.35,
-			opacity: 0,
-			transform: "translate3d(0,0,0)",
-		},
-		{
-			scale: 0.96,
-			opacity: 1,
-			transform: "translate3d(0,10px,0)",
-		}
-	),
+ScrollTrigger.matchMedia({
+	"(min-width: 560px)": function () {
+		ScrollTrigger.create({
+			trigger: ".s-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v1",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.976,
+					opacity: 1,
+					transform: "translate3d(0,-30px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".s-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v2",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(-20px,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(-20px,-20px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".s-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v3",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(0,-10px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".s-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v4",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(-20px,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(-20px,0,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".s-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v5",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(0,10px,0)",
+				}
+			),
+		});
+	},
 });

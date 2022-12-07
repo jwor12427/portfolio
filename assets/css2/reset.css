@@ -195,13 +195,13 @@ button {
 	transform: rotate(90deg);
 	vertical-align: 3px;
 }
-.main__icon.black {
+.main__icon.white {
 	display: inline-block;
 	margin-right: 2.5rem;
 	position: relative;
 	width: 0px;
 	height: 0px;
-	border-bottom: 9px solid #101010;
+	border-bottom: 9px solid #fff;
 	border-left: 0px solid transparent;
 	border-right: 9px solid transparent;
 	transform: rotate(90deg);
