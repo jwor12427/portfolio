@@ -41,8 +41,8 @@
 }
 .about__img02 {
 	width: 48%;
-	width: 27vw;
-	height: 27vw;
+	width: 30vw;
+	height: 30vw;
 	transform: rotate(-30deg);
 	z-index: 10;
 	/* position: absolute; */
@@ -55,7 +55,7 @@
 	z-index: 10;
 }
 .about__desc.left {
-	margin-right: 15rem;
+	margin-right: 15vw;
 	z-index: 10;
 }
 .about__desc .about__title {
@@ -244,6 +244,9 @@
 	}
 	.about__desc.left {
 		margin-right: 0;
+	}
+	.about__bottom {
+		justify-content: space-between;
 	}
 	.about__img01 img {
 		width: 180px;
