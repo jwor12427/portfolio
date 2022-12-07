@@ -201,7 +201,10 @@
 							</div>
 							<div class="about__desc">
 								<p class="about__title">passion</p>
-								<span class="main__icon"></span>
+								<span
+									class="main__icon"
+									aria-hidden="true"
+								></span>
 								<em class="about__me">
 									“도전은 인생을 흥미롭게 만들며, 도전의 극복이 인생을 의미있게
 									한다.” 늘 새로운 도전을 할때에는 불안감이 앞섭니다. 하지만,
@@ -221,7 +224,10 @@
 							</div>
 							<div class="about__desc left">
 								<p class="about__title">challenge</p>
-								<span class="main__icon"></span>
+								<span
+									class="main__icon"
+									aria-hidden="true"
+								></span>
 								<em class="about__me">
 									“사람을 강하게 만드는 것은 사람이 하는 일이 아니라, 하고자
 									노력하는 것이다.” 지난 시간동안 공부를 하며 힘들었던 점도
@@ -283,12 +289,14 @@
 									<img
 										src="assets/img/stie_t_c01.png"
 										alt="사이트사진"
+										class="c_img"
 									/>
 								</div>
 								<div class="circle__site">
 									<img
 										src="assets/img/stie_t_c02.png"
 										alt="사이트사진"
+										class="c_img"
 									/>
 								</div>
 								<div class="circle__site">
@@ -388,49 +396,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 		<!-- //gsap -->
-		<script src="assets/js/start.js"></script>
+		<script src="assets/js/index2.js"></script>
 		<!-- //시작애니메이션 -->
 		<script>
-			gsap.registerPlugin(ScrollTrigger);
-			const lenis = new Lenis({
-				duration: 1.2,
-				easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-			});
-			function raf(time) {
-				lenis.raf(time);
-				requestAnimationFrame(raf);
-			}
-			requestAnimationFrame(raf);
-
-			//scrollTrigger
-			ScrollTrigger.matchMedia({
-				"(min-width: 560px)": function () {
-					gsap.to(".rail__item", {
-						scrollTrigger: {
-							trigger: ".rail__item",
-							scrub: 1,
-						},
-						x: -150,
-					});
-					gsap.to(".about__img01", {
-						scrollTrigger: {
-							trigger: ".about__img01",
-							scrub: 1,
-						},
-						transform: "rotate(-15deg)",
-						zIndex: 100,
-					});
-					gsap.to(".about__img02", {
-						scrollTrigger: {
-							trigger: ".about__img02",
-							scrub: 1,
-						},
-						transform: "scale(1.24)",
-						zIndex: 100,
-					});
-				},
-			});
-
 			//햄버거 메뉴
 			const ham = document.querySelector(".header__ham");
 			const hamMenu = document.querySelector(".header__nav");
