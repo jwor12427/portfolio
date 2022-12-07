@@ -1,4 +1,5 @@
 /** @format */
+
 gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
 	trigger: ".c-rail__inner",

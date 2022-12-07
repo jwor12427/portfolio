@@ -138,12 +138,13 @@
 	text-transform: uppercase;
 	font-size: 4.4vw;
 	white-space: nowrap;
-	line-height: 110%;
+	line-height: 70%;
+	cursor: default;
 }
 .script__detail {
 	border-bottom: 2px solid #fff;
-	height: 10vw;
-	padding: 2rem 3rem;
+	/* height: 10vw; */
+	padding: 2vw 3vw;
 	display: flex;
 	align-items: center;
 	flex-direction: row-reverse;
@@ -158,6 +159,7 @@
 	font-weight: 300;
 	font-size: 1.1vw;
 	line-height: 1.4;
+	cursor: default;
 }
 
 /* 미디어 쿼리 */
@@ -200,7 +202,7 @@
 }
 @media (max-width: 600px) {
 	.site__inner-d {
-		height: 100vw;
+		height: 85vw;
 	}
 	.site__back {
 		width: 45vw;
@@ -210,5 +212,11 @@
 	}
 	.site__left {
 		padding: 1.5rem;
+	}
+	.s-rail__line {
+		line-height: 90%;
+	}
+	.script__be-line {
+		line-height: 120%;
 	}
 }

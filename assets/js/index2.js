@@ -250,7 +250,7 @@ gsap.to(".site__circle-b", {
 ScrollTrigger.matchMedia({
 	"(min-width: 560px)": function () {
 		ScrollTrigger.create({
-			trigger: ".s-rail__inner",
+			trigger: ".rail__effect",
 			scrub: 1,
 			animation: gsap.fromTo(
 				".v1",
@@ -267,7 +267,7 @@ ScrollTrigger.matchMedia({
 			),
 		});
 		ScrollTrigger.create({
-			trigger: ".s-rail__inner",
+			trigger: ".rail__effect",
 			scrub: 1,
 			animation: gsap.fromTo(
 				".v2",
@@ -284,7 +284,7 @@ ScrollTrigger.matchMedia({
 			),
 		});
 		ScrollTrigger.create({
-			trigger: ".s-rail__inner",
+			trigger: ".rail__effect",
 			scrub: 1,
 			animation: gsap.fromTo(
 				".v3",
@@ -301,7 +301,7 @@ ScrollTrigger.matchMedia({
 			),
 		});
 		ScrollTrigger.create({
-			trigger: ".s-rail__inner",
+			trigger: ".rail__effect",
 			scrub: 1,
 			animation: gsap.fromTo(
 				".v4",
@@ -318,7 +318,144 @@ ScrollTrigger.matchMedia({
 			),
 		});
 		ScrollTrigger.create({
-			trigger: ".s-rail__inner",
+			trigger: ".rail__effect",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v5",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(0,10px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".rail__effect",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v6",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(-20px,20px,0)",
+				}
+			),
+		});
+	},
+});
+
+//사이트부분 위에 고정
+ScrollTrigger.matchMedia({
+	"(min-width: 560px)": function () {
+		//사이트 부분 위에 고정
+		let sites = gsap.utils.toArray(".site");
+		sites.forEach((site, i) => {
+			ScrollTrigger.create({
+				trigger: site,
+				start: "top 70px",
+				pin: i === sites.length - 1 ? false : true,
+				end: "bottom 70px",
+				pinSpacing: false,
+				scrub: 1,
+			});
+		});
+		let reacts = gsap.utils.toArray(".react");
+		reacts.forEach((react, i) => {
+			ScrollTrigger.create({
+				trigger: react,
+				start: "top 70px",
+				end: "bottom 70px",
+				pin: i === react.length - 1 ? false : true,
+				pinSpacing: false,
+				scrub: 1,
+			});
+		});
+	},
+});
+
+//글씨 효과 - javascript coding
+ScrollTrigger.matchMedia({
+	"(min-width: 560px)": function () {
+		ScrollTrigger.create({
+			trigger: ".rail__effect2",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v1",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.976,
+					opacity: 1,
+					transform: "translate3d(0,-30px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".rail__effect2",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v2",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(-20px,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(-20px,-20px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".rail__effect2",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v3",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(0,-10px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".rail__effect2",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".v4",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(-20px,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(-20px,0,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".rail__effect2",
 			scrub: 1,
 			animation: gsap.fromTo(
 				".v5",
@@ -335,4 +472,70 @@ ScrollTrigger.matchMedia({
 			),
 		});
 	},
+});
+//가로모드
+const sections = gsap.utils.toArray(".section");
+ScrollTrigger.matchMedia({
+	"(min-width: 1000px)": function () {
+		gsap.to(sections, {
+			xPercent: -100 * (sections.length - 1),
+			ease: "none",
+			scrollTrigger: {
+				trigger: "#section5",
+				pin: true,
+				scrub: 1,
+				end: "+=3600",
+				markers: true,
+			},
+		});
+		ScrollTrigger.create({
+			trigger: "#section5",
+			scrub: 1,
+			animation: gsap.to(".horizontalSection", {
+				backgroundColor: "#f55c47",
+			}),
+		});
+	},
+	"(max-width:900px)": function () {
+		ScrollTrigger.create({
+			trigger: ".script__detail",
+			scrub: 1,
+			animation: gsap.to(".header__list", {
+				backgroundColor: "#f55c47",
+			}),
+		});
+	},
+	"(max-width:1100px)": function () {
+		ScrollTrigger.create({
+			trigger: "#section5",
+			scrub: 1,
+			toggleClass: { targets: ".horizontalSection", className: "red" },
+		});
+	},
+});
+
+//가로모드 색 변경
+ScrollTrigger.create({
+	trigger: ".script__detail",
+	scrub: 0.1,
+	animation: gsap.to(".header__inner", {
+		background: "#f55c47",
+	}),
+	delay: -1,
+});
+ScrollTrigger.create({
+	trigger: ".script__detail",
+	scrub: 1,
+	animation: gsap.to(".header__logo", {
+		background: "#f55c47",
+	}),
+	delay: 1,
+});
+
+ScrollTrigger.create({
+	trigger: ".script__detail",
+	scrub: 1,
+	animation: gsap.to(".header__nav", {
+		backgroundColor: "#f55c47",
+	}),
 });

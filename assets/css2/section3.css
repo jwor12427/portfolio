@@ -50,6 +50,7 @@
 	display: flex;
 	position: absolute;
 	flex-direction: column;
+	cursor: default;
 }
 .s-rail__line {
 	font-family: "PPMonument";
@@ -57,9 +58,10 @@
 	font-size: 4vw;
 	text-transform: uppercase;
 	white-space: nowrap;
-	line-height: 90%;
+	line-height: 65%;
 	transform-origin: 50% 0%;
 }
+
 .site__detail {
 	/* height: 6vw; */
 	display: flex;

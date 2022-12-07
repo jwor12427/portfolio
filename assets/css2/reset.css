@@ -201,9 +201,9 @@ button {
 	position: relative;
 	width: 0px;
 	height: 0px;
-	border-bottom: 9px solid #fff;
+	border-bottom: 0.9vw solid #fff;
 	border-left: 0px solid transparent;
-	border-right: 9px solid transparent;
+	border-right: 0.9vw solid transparent;
 	transform: rotate(90deg);
 	vertical-align: 3px;
 }

@@ -1,0 +1,232 @@
+/** @format */
+
+#section5 {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.script__bg {
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 9vw 7vw;
+}
+.script__back {
+	width: 39vw;
+	position: absolute;
+	z-index: 10;
+}
+.script__pron {
+	width: 39vw;
+	position: absolute;
+	z-index: 100;
+}
+
+.horizontalWrap {
+	width: 100%;
+	height: 100vh;
+}
+.horizontalSection {
+	overscroll-behavior: none;
+	width: 500%;
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+}
+.script__rail-t {
+	color: #fff;
+	font-family: "PPMonument";
+	position: absolute;
+	top: 12%;
+	display: flex;
+	align-items: center;
+}
+.script__t {
+	font-size: 27vw;
+	display: block;
+	font-weight: 900;
+	white-space: nowrap;
+	text-transform: uppercase;
+	animation: c-rail 60s linear infinite;
+}
+.rail-j {
+	border-top: 2px solid #101010;
+	border-bottom: 2px solid #101010;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+}
+.rail__inner-j {
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+}
+@keyframes c-rail {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+.rail__item-j {
+	transform: translate(0px, 0px);
+	font-family: "PPMonument";
+	padding: 0.3vw 0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+.j-desc {
+	display: inline-block;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-family: "PPMonument";
+	font-size: 3vw;
+	white-space: nowrap;
+}
+.r-svg {
+	width: 3.5vw;
+	padding: 0vw 0.9vw;
+}
+.section {
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+.section1 .script__bg {
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 8vw 6vw;
+}
+.section2 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 7vw;
+}
+.script__cont {
+	width: 45%;
+	transition: all 0.3s;
+}
+.script__svg01 {
+	width: 39vw;
+	position: absolute;
+	z-index: 10;
+}
+.script01 {
+	width: 39vw;
+	position: absolute;
+	z-index: 100;
+}
+.script__cont02 {
+	width: 45%;
+}
+.script__svg02 {
+	width: 39vw;
+	position: absolute;
+	z-index: 10;
+}
+.script02 {
+	width: 39vw;
+	position: absolute;
+	z-index: 100;
+}
+.script__behind01 {
+	width: 39vw;
+	height: 39vw;
+	position: absolute;
+	z-index: 100;
+	scale: 0;
+}
+
+.behind__desc {
+	position: absolute;
+	top: 40%;
+	left: 31%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.be__title {
+	text-align: center;
+	color: #fff;
+	font-size: 2.2vw;
+	font-weight: 800;
+	font-family: "NexonLv2Gothic";
+	margin-bottom: 25px;
+}
+.site__go {
+	text-align: center;
+	width: 7vw;
+	font-family: "NexonLv2Gothic";
+	font-size: 1vw;
+	display: block;
+	background-color: #fff;
+	padding: 0.5vw 1.2vw;
+	border-radius: 10px;
+}
+.section3 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 7vw;
+}
+.section4 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 7vw;
+}
+.section5 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 7vw;
+}
+/* 미디어 쿼리 */
+@media (max-width: 1000px) {
+	#section5 {
+		height: 100%;
+	}
+	.horizontalSection {
+		width: 100%;
+		flex-direction: column;
+		height: 100%;
+		flex-wrap: wrap;
+	}
+	.horizontalWrap {
+		height: 100%;
+	}
+	.section {
+		width: 100vw;
+		height: 50vh;
+		padding-top: 4vw;
+	}
+	.script {
+		display: flex;
+		justify-content: center;
+	}
+}
+@media (max-width: 600px) {
+	.section {
+		flex-direction: column;
+	}
+	.script__cont {
+		width: 100%;
+	}
+	.script__cont02 {
+		width: 100%;
+	}
+}

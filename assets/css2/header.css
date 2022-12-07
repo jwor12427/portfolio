@@ -137,7 +137,7 @@
 		position: absolute;
 		visibility: visible;
 		left: 0;
-		top: -200px;
+		top: -250px;
 		transition: all 1s cubic-bezier(0.38, 0.005, 0.215, 1);
 	}
 	.header__nav ul.over {
@@ -156,7 +156,7 @@
 		padding: 3vw;
 	}
 	.header__logo {
-		width: 50%;
+		width: 90%;
 		border-right: none;
 		font-size: 24px;
 	}
