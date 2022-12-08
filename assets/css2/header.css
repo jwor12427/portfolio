@@ -76,7 +76,7 @@
 .header__ham span {
 	display: block;
 	position: absolute;
-	height: 9px;
+	height: 3px;
 	width: 60px;
 	background: #292929;
 	border-radius: 9px;

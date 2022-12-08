@@ -70,7 +70,7 @@
 	font-weight: 300;
 	line-height: 150%;
 	width: 600px;
-	font-size: 1.2vw;
+	font-size: 18px;
 	z-index: 10;
 	position: relative;
 }
@@ -234,13 +234,55 @@
 }
 /* 미디어쿼리 */
 @media (max-width: 860px) {
+	.about__top {
+		flex-direction: column;
+	}
+	.about__img01 {
+		width: 100%;
+		text-align: center;
+	}
+	.about__desc {
+		width: 100%;
+	}
 	.about__img01 img {
+		width: 400px;
+		height: 400px;
 		margin-left: 0;
+	}
+	.about__desc .about__title {
+		font-size: 24px;
+	}
+	.about__top {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #000;
+	}
+	.about__bottom {
+		flex-direction: column;
+	}
+	.about__img02 {
+		width: 100%;
+	}
+	.about__desc.left {
+		width: 100%;
+	}
+	.about__img02 {
+		width: 400px;
+		height: 400px;
+	}
+	.about__desc.left {
+		margin-right: 0;
 	}
 }
 @media (max-width: 550px) {
+	.about__top {
+		align-items: center;
+	}
+	.about__desc .about__title {
+		font-size: 20px;
+	}
 	.about__desc .about__me {
 		line-height: 1.2;
+		font-size: 14px;
 	}
 	.about__desc.left {
 		margin-right: 0;
@@ -251,12 +293,9 @@
 	.about__img01 img {
 		width: 180px;
 		height: 180px;
-		right: 20%;
 	}
 	.about__img02 {
 		width: 180px;
 		height: 180px;
-		right: -8%;
-		bottom: auto;
 	}
 }

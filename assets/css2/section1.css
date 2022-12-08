@@ -26,7 +26,7 @@
 .main__top {
 	width: 100%;
 	font-family: "PPMonument";
-	font-size: 28vw;
+	font-size: 32rem;
 	overflow: hidden;
 	position: absolute;
 	white-space: nowrap;
@@ -43,21 +43,21 @@
 	display: flex;
 	justify-content: center;
 	position: relative;
-	padding-top: 3vw;
+	padding-top: 2vw;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
 .back {
-	width: 35vw;
-	height: 35vw;
+	width: 650px;
+	height: 650px;
 	position: absolute;
 	z-index: 10;
 	animation: rotateIt 20s linear infinite;
 	overflow: hidden;
 }
 .frot {
-	width: 35vw;
-	height: 35vw;
+	width: 650px;
+	height: 650px;
 	position: absolute;
 	z-index: 100;
 }
@@ -71,7 +71,7 @@
 	display: block;
 	font-family: "NexonLv2Gothic";
 	line-height: 1.4;
-	font-size: 1vw;
+	font-size: 14px;
 	padding-left: 1.4vw;
 }
 .main__rail {
@@ -123,17 +123,20 @@
 		height: 160vw;
 	} */
 	.main__ce {
-		padding-top: 30vw;
 		display: flex;
 		justify-content: center;
+		padding-top: 13vw;
 	}
 	.back {
-		width: 450px;
-		height: 450px;
+		width: 500px;
+		height: 500px;
 	}
 	.frot {
-		width: 450px;
-		height: 450px;
+		width: 500px;
+		height: 500px;
+	}
+	.rail__desc {
+		font-size: 28px;
 	}
 }
 @media (max-width: 550px) {
