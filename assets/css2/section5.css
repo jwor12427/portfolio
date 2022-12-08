@@ -114,7 +114,9 @@
 }
 .script__cont {
 	width: 45%;
-	transition: all 0.3s;
+}
+.script {
+	height: 45vh;
 }
 .script__svg01 {
 	width: 39vw;
@@ -150,11 +152,17 @@
 .behind__desc {
 	position: absolute;
 	top: 40%;
-	left: 31%;
+	left: 30%;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.behind__desc.plus {
+	left: 26%;
+}
+.behind__desc.last {
+	left: 37%;
 }
 .be__title {
 	text-align: center;
@@ -164,16 +172,63 @@
 	font-family: "NexonLv2Gothic";
 	margin-bottom: 25px;
 }
-.site__go {
-	text-align: center;
-	width: 7vw;
-	font-family: "NexonLv2Gothic";
-	font-size: 1vw;
-	display: block;
+/* .site__go {
 	background-color: #fff;
-	padding: 0.5vw 1.2vw;
-	border-radius: 10px;
+} */
+
+.site__go {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	box-sizing: border-box;
 }
+.site__go span {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	transition: 0.3s;
+	padding: 0.7vw 2vw;
+	/* width: 7vw; */
+	font-size: 1.5vw;
+}
+.site__go::before {
+	background-color: #eff5f5;
+	transition: 0.3s ease-out;
+}
+.site__go span {
+	color: #eff5f5;
+	border: 2px solid #eff5f5;
+	transition: 0.2s;
+	border-radius: 5px;
+}
+.site__go span:hover {
+	color: #181d31;
+	transition: 0.2s 0.1s;
+}
+
+/* 6. hover-slide-down */
+.site__go::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 0%;
+	width: 100%;
+	border-radius: 5px;
+}
+.site__go:hover::before {
+	height: 100%;
+}
+
 .section3 {
 	width: 100%;
 	height: 100vh;
@@ -211,22 +266,53 @@
 	}
 	.section {
 		width: 100vw;
-		height: 50vh;
+		height: 60vh;
 		padding-top: 4vw;
 	}
 	.script {
 		display: flex;
 		justify-content: center;
 	}
+	.script01,
+	.script02 {
+		display: none;
+	}
+	.script__behind01 {
+		scale: 1;
+	}
+}
+@media (max-width: 870px) {
+	.script__svg02,
+	.script__svg01,
+	.script__behind01 {
+		width: 45vw;
+	}
+	.behind__desc {
+		left: 33%;
+	}
+	.behind__desc.plus {
+		left: 29%;
+	}
 }
 @media (max-width: 600px) {
 	.section {
 		flex-direction: column;
+		height: 100vw;
 	}
 	.script__cont {
 		width: 100%;
 	}
 	.script__cont02 {
 		width: 100%;
+	}
+	.script__back,
+	.script__pron {
+		width: 55vw;
+	}
+	.section1 .script__bg {
+		justify-content: center;
+	}
+	.script {
+		padding-top: 5vw;
 	}
 }

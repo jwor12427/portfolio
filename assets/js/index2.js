@@ -539,3 +539,84 @@ ScrollTrigger.create({
 		backgroundColor: "#f55c47",
 	}),
 });
+
+//가로모드 자바스크립트 오버 할때 효과
+let mm2 = gsap.matchMedia();
+mm2.add("(min-width: 1000px)", () => {
+	gsap.set("img", {
+		visibility: "visible",
+		duration: 0.5,
+	});
+
+	let link = gsap.utils.toArray(".script");
+	link.forEach(function (el) {
+		let img = el.querySelector(".script__behind01");
+		let img2 = el.querySelector(".back__img");
+		let animation = null;
+		let isHovering = false;
+		el.addEventListener("mouseenter", onEnter);
+		el.addEventListener("mouseleave", onLeave);
+
+		function onEnter() {
+			isHovering = true;
+
+			if (!animation) {
+				animation = gsap.fromTo(
+					img,
+					{ scale: 0 },
+					{
+						scale: 1,
+						duration: 0.5,
+						ease: "Cubic.easeIn",
+						onComplete: () => {
+							animation = null;
+							if (!isHovering) {
+								onLeave();
+							}
+						},
+					}
+				);
+				animation = gsap.fromTo(
+					img2,
+					{ rotation: 0 },
+					{
+						rotation: -360,
+						duration: 3,
+						ease: "Cubic.easeIn",
+						onComplete: () => {
+							animation = null;
+							if (!isHovering) {
+								onLeave();
+							}
+						},
+					}
+				);
+			}
+		}
+
+		function onLeave() {
+			isHovering = false;
+
+			if (!animation) {
+				animation = gsap.to(img, {
+					scale: 0,
+					onComplete: () => {
+						animation = null;
+						if (isHovering) {
+							onEnter();
+						}
+					},
+				});
+				animation = gsap.to(img2, {
+					rotation: 0,
+					onComplete: () => {
+						animation = null;
+						if (isHovering) {
+							onEnter();
+						}
+					},
+				});
+			}
+		}
+	});
+});
