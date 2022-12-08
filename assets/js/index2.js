@@ -106,7 +106,7 @@ document.querySelector(".about__wrap").addEventListener("mousemove", (e) => {
 
 //사이트 원이미지 테두리 색 변화
 let mm = gsap.matchMedia();
-mm.add("(min-width: 560px)", () => {
+mm.add("(min-width:900px)", () => {
 	gsap.set("img", {
 		visibility: "visible",
 		duration: 0.5,
@@ -118,10 +118,8 @@ mm.add("(min-width: 560px)", () => {
 		let animation = null;
 		let isHovering = false;
 
-		if (window.matchMedia("(min-width: 560px)")) {
-			el.addEventListener("mouseenter", onEnter);
-			el.addEventListener("mouseleave", onLeave);
-		}
+		el.addEventListener("mouseenter", onEnter);
+		el.addEventListener("mouseleave", onLeave);
 
 		function onEnter() {
 			isHovering = true;
@@ -182,7 +180,7 @@ gsap.to(".site__circle-b", {
 });
 //글씨 효과 - site coding
 ScrollTrigger.matchMedia({
-	"(min-width: 560px)": function () {
+	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
 			trigger: ".rail__effect",
 			scrub: 1,
@@ -319,7 +317,7 @@ ScrollTrigger.matchMedia({
 
 //글씨 효과 - javascript coding
 ScrollTrigger.matchMedia({
-	"(min-width: 560px)": function () {
+	"(min-width: 900px)": function () {
 		ScrollTrigger.create({
 			trigger: ".rail__effect2",
 			scrub: 1,
