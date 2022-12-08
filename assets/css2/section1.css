@@ -119,9 +119,9 @@
 }
 
 @media (max-width: 1000px) {
-	/* #section1 {
-		height: 160vw;
-	} */
+	#section1 {
+		height: auto;
+	}
 	.main__box {
 		height: 90vh;
 	}
@@ -140,6 +140,12 @@
 	}
 	.rail__desc {
 		font-size: 28px;
+	}
+	.rail__icon svg {
+		width: 28px;
+	}
+	.main__sub .main__title {
+		margin-bottom: 20px;
 	}
 }
 @media (max-width: 550px) {

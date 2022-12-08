@@ -189,9 +189,9 @@ button {
 	position: relative;
 	width: 0px;
 	height: 0px;
-	border-bottom: 0.9vw solid #f55c47;
+	border-bottom: 9px solid #f55c47;
 	border-left: 0px solid transparent;
-	border-right: 0.9vw solid transparent;
+	border-right: 9px solid transparent;
 	transform: rotate(90deg);
 	vertical-align: 3px;
 }
@@ -201,21 +201,23 @@ button {
 	position: relative;
 	width: 0px;
 	height: 0px;
-	border-bottom: 0.9vw solid #fff;
+	border-bottom: 9px solid #fff;
 	border-left: 0px solid transparent;
-	border-right: 0.9vw solid transparent;
+	border-right: 9px solid transparent;
 	transform: rotate(90deg);
 	vertical-align: 3px;
 }
-/* @media (max-width: 750px) {
+@media (max-width: 850px) {
 	.main__icon {
-		border-bottom: 5px solid #f55c47;
+		border-bottom: 6px solid #f55c47;
 		border-left: 0px solid transparent;
-		border-right: 5px solid transparent;
+		border-right: 6px solid transparent;
+		vertical-align: 4px;
 	}
 	.main__icon.black {
-		border-bottom: 5px solid #101010;
+		border-bottom: 6px solid #101010;
 		border-left: 0px solid transparent;
-		border-right: 5px solid transparent;
+		border-right: 6px solid transparent;
+		vertical-align: 4px;
 	}
-} */
+}

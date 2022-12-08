@@ -73,6 +73,7 @@
 	font-size: 18px;
 	z-index: 10;
 	position: relative;
+	word-break: keep-all;
 }
 
 .about__icon {
