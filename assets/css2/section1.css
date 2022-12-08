@@ -153,10 +153,21 @@
 		animation: rail2 20s linear infinite;
 	}
 	.main__top {
-		font-size: 4rem;
+		display: none;
 	}
 	.top__title {
 		animation: rail 10s linear infinite;
+	}
+	.back {
+		width: 400px;
+		height: 400px;
+	}
+	.frot {
+		width: 400px;
+		height: 400px;
+	}
+	.main__sub .main__title {
+		text-align: center;
 	}
 }
 @keyframes rail {

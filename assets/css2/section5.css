@@ -363,6 +363,9 @@
 	.script__cont02 {
 		padding-top: 0;
 	}
+	.script__rail-t {
+		top: 12%;
+	}
 	.behind__desc {
 		top: 60%;
 		left: 37%;

@@ -287,6 +287,7 @@
 	}
 	.about__desc .about__title {
 		font-size: 20px;
+		text-align: center;
 	}
 	.about__desc .about__me {
 		line-height: 1.2;

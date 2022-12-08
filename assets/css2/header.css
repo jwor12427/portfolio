@@ -120,6 +120,9 @@
 	#header {
 		background-color: #f0f0f0;
 	}
+	.header__inner {
+		justify-content: space-around;
+	}
 	.header__nav {
 		width: 100%;
 		opacity: 0;
@@ -155,13 +158,14 @@
 		padding: 3vw;
 	}
 	.header__logo {
-		width: 90%;
+		width: 85%;
 		border-right: none;
 		font-size: 24px;
 	}
 	.header__ham {
-		width: 10%;
+		width: 7%;
 		display: block;
+		align-items: center;
 	}
 	.header__badge {
 		padding: 0.5vw 1vw;
