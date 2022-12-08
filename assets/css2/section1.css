@@ -120,10 +120,10 @@
 
 @media (max-width: 1000px) {
 	#section1 {
-		height: auto;
+		height: 100%;
 	}
 	.main__box {
-		height: 90vh;
+		height: 85vh;
 	}
 	.main__ce {
 		display: flex;
@@ -152,6 +152,12 @@
 	.rail__item {
 		animation: rail2 20s linear infinite;
 	}
+	.main__top {
+		font-size: 4rem;
+	}
+	.top__title {
+		animation: rail 10s linear infinite;
+	}
 }
 @keyframes rail {
 	0% {
@@ -166,6 +172,6 @@
 		transform: translateX(0px);
 	}
 	100% {
-		transform: translate3d(300%, 0, 0);
+		transform: translate3d(200%, 0, 0);
 	}
 }

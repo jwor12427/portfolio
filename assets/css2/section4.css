@@ -51,7 +51,7 @@
 	border-radius: 30px;
 }
 .site__btn a:first-child {
-	margin-right: 1.5vw;
+	margin-right: 10px;
 }
 .s__conts-rail {
 	width: 100%;
@@ -214,7 +214,7 @@
 		padding: 1.5rem;
 	}
 	.s-rail__line {
-		line-height: 90%;
+		line-height: 100%;
 	}
 	.script__be-line {
 		line-height: 120%;
