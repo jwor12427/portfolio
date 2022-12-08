@@ -1321,6 +1321,15 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 		<script>
+			//햄버거 메뉴
+			const ham = document.querySelector(".header__ham");
+			const hamMenu = document.querySelector(".header__nav");
+			const hamList = document.querySelector(".header__list");
+			ham.addEventListener("click", () => {
+				ham.classList.toggle("open");
+				hamMenu.classList.toggle("open");
+				hamList.classList.toggle("over");
+			});
 			//시작 애니메이션
 			let tl = gsap.timeline({ repeat: 0, repeatDelay: 2 });
 			let tl2 = gsap.timeline({ repeat: 0, repeatDelay: 0 });

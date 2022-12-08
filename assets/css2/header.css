@@ -17,6 +17,7 @@
 	color: #101010;
 	display: flex;
 	justify-content: space-between;
+	background-color: #f0f0f0;
 }
 .header__logo {
 	width: 15%;
@@ -28,13 +29,11 @@
 	display: flex;
 	padding: 0 1vw;
 	align-items: center;
-	background-color: #f0f0f0;
 }
 .header__nav {
 	flex: 1;
 	display: flex;
 	align-items: center;
-	background-color: #f0f0f0;
 }
 .header__list {
 	width: 100%;
