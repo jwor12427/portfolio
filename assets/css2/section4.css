@@ -207,6 +207,18 @@
 	.site__fron {
 		width: 500px;
 	}
+	.script__detail__desc {
+		width: 100%;
+	}
+	.detail__desc.js {
+		font-size: 16px;
+	}
+	.script__detail {
+		padding: 25px 20px;
+	}
+	.script__be-line {
+		line-height: 100%;
+	}
 }
 @media (max-width: 600px) {
 	.site__inner-d {
@@ -236,5 +248,8 @@
 	.site__btn a {
 		padding: 7px 20px;
 		font-size: 12px;
+	}
+	.detail__desc.js {
+		font-size: 14px;
 	}
 }
