@@ -221,3 +221,21 @@ button {
 		vertical-align: 4px;
 	}
 }
+/* 글씨효과 없애기 */
+@media (max-width: 900px) {
+	.s-rail__conts {
+		display: none;
+	}
+	.site__detail {
+		border-top: 2px solid #101010;
+	}
+	.script__be__inner {
+		display: none;
+	}
+	.script__before.end {
+		display: none;
+	}
+	.contact__wrap__rail {
+		display: none;
+	}
+}
