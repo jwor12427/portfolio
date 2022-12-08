@@ -369,14 +369,14 @@
 	.behind__desc {
 		top: 60%;
 		left: 37%;
-		transform: translate(-15%, 100%);
+		transform: translate(-15%, 70%);
 	}
 	.behind__desc.plus {
 		left: 37%;
-		transform: translate(-20%, 100%);
+		transform: translate(-20%, 70%);
 	}
 	.behind__desc.last {
-		transform: translate(10%, 100%);
+		transform: translate(10%, 70%);
 	}
 	.be__title {
 		font-size: 20px;
