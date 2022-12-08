@@ -11,7 +11,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 //시작 애니메이션
-let tl = gsap.timeline({ repeat: 0, repeatDelay: 0 });
+let tl = gsap.timeline({ repeat: 0, repeatDelay: 2 });
 let tl2 = gsap.timeline({ repeat: 0, repeatDelay: 0 });
 let tl3 = gsap.timeline({ repeat: 0, repeatDelay: 0.1 });
 let tl4 = gsap.timeline({ repeat: 0, repeatDelay: 0.2 });
@@ -28,11 +28,12 @@ tl.fromTo(
 		transform: "translate3d(0, 0, 0)",
 		transformOrigin: "top",
 		ease: "Sine.easeInOut",
-		duration: 1,
+		duration: 1.3,
+		delay: 0.2,
 	}
 );
 tl3.fromTo(
-	".header__logo",
+	".header__inner",
 	{
 		opacity: 0,
 		transform: "translate3d(0, -100%, 0)",
@@ -42,56 +43,7 @@ tl3.fromTo(
 	{
 		opacity: 1,
 		transform: "translate3d(0, 0, 0)",
-		ease: "bounce",
-		transformOrigin: "top",
-		duration: 1,
-	}
-);
-tl3.fromTo(
-	".header__main",
-	{
-		opacity: 0,
-		transform: "translate3d(0, 100%, 0)",
-		visibility: "visible",
-		transformOrigin: "bottom",
-	},
-	{
-		opacity: 1,
-		transform: "translate3d(0, 0, 0)",
-		delay: 0.2,
-		transformOrigin: "top",
-		duration: 1,
-	}
-);
-tl4.fromTo(
-	".header__nav",
-	{
-		opacity: 0,
-		transform: "translate3d(0, -100%, 0)",
-		visibility: "visible",
-		transformOrigin: "top",
-	},
-	{
-		opacity: 1,
-		transform: "translate3d(0, 0, 0)",
-		ease: "bounce",
-		delay: 0.2,
-		transformOrigin: "top",
-		duration: 1,
-	}
-);
-tl4.fromTo(
-	".header__link",
-	{
-		opacity: 0,
-		transform: "translate3d(0, 100%, 0)",
-		visibility: "visible",
-		transformOrigin: "bottom",
-	},
-	{
-		opacity: 1,
-		transform: "translate3d(0, 0, 0)",
-		delay: 0.4,
+		ease: "Sine.easeInOut",
 		transformOrigin: "top",
 		duration: 1,
 	}
@@ -107,7 +59,7 @@ tl2.fromTo(
 		opacity: 1,
 		transform: "translate3d(0, 0, 0)",
 		transformOrigin: "left",
-		delay: 0.3,
+		delay: 0.5,
 		duration: 1,
 	}
 );
@@ -123,23 +75,6 @@ ScrollTrigger.matchMedia({
 			},
 			x: -150,
 		});
-		//about 이미지 스크롤 움직임
-		// gsap.to(".about__img01", {
-		// 	scrollTrigger: {
-		// 		trigger: ".about__img01",
-		// 		scrub: 1,
-		// 	},
-		// 	transform: "rotate(-15deg)",
-		// 	zIndex: 100,
-		// });
-		// gsap.to(".about__img02", {
-		// 	scrollTrigger: {
-		// 		trigger: ".about__img02",
-		// 		scrub: 1,
-		// 	},
-		// 	transform: "scale(1.24)",
-		// 	zIndex: 100,
-		// });
 	},
 });
 
@@ -153,7 +88,7 @@ document.querySelector(".about__wrap").addEventListener("mousemove", (e) => {
 
 	const imgMove1 = document.querySelector(".about__img01");
 	const imgMove2 = document.querySelector(".about__img02");
-	if (window.matchMedia("(min-width: 560px)").matches) {
+	if (window.matchMedia("(min-width: 860px)").matches) {
 		gsap.to(imgMove1, {
 			duration: 0.4,
 			x: centerPageX / 40,
@@ -245,7 +180,6 @@ gsap.to(".site__circle-b", {
 	},
 	xPercent: 25,
 });
-
 //글씨 효과 - site coding
 ScrollTrigger.matchMedia({
 	"(min-width: 560px)": function () {
@@ -489,30 +423,6 @@ ScrollTrigger.matchMedia({
 				markers: true,
 			},
 		});
-
-		ScrollTrigger.create({
-			trigger: "#section5",
-			scrub: 1,
-			animation: gsap.to(".horizontalSection", {
-				backgroundColor: "#f55c47",
-			}),
-		});
-	},
-	"(max-width:900px)": function () {
-		ScrollTrigger.create({
-			trigger: ".script__detail",
-			scrub: 1,
-			animation: gsap.to(".header__list", {
-				backgroundColor: "#f55c47",
-			}),
-		});
-	},
-	"(max-width:1100px)": function () {
-		ScrollTrigger.create({
-			trigger: "#section5",
-			scrub: 1,
-			toggleClass: { targets: ".horizontalSection", className: "red" },
-		});
 	},
 });
 
@@ -528,18 +438,10 @@ ScrollTrigger.create({
 ScrollTrigger.create({
 	trigger: ".script__detail",
 	scrub: 1,
-	animation: gsap.to(".header__logo", {
+	animation: gsap.to(".header__inner", {
 		background: "#f55c47",
 	}),
 	delay: 1,
-});
-
-ScrollTrigger.create({
-	trigger: ".script__detail",
-	scrub: 1,
-	animation: gsap.to(".header__nav", {
-		backgroundColor: "#f55c47",
-	}),
 });
 
 //가로모드 자바스크립트 오버 할때 효과
