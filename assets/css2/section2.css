@@ -240,6 +240,7 @@
 	.about__img01 {
 		width: 100%;
 		text-align: center;
+		margin-bottom: 10px;
 	}
 	.about__desc {
 		width: 100%;
@@ -261,6 +262,7 @@
 	}
 	.about__img02 {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 	.about__desc.left {
 		width: 100%;
