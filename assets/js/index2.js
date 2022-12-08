@@ -473,6 +473,7 @@ ScrollTrigger.matchMedia({
 		});
 	},
 });
+
 //가로모드
 const sections = gsap.utils.toArray(".section");
 ScrollTrigger.matchMedia({
@@ -488,6 +489,7 @@ ScrollTrigger.matchMedia({
 				markers: true,
 			},
 		});
+
 		ScrollTrigger.create({
 			trigger: "#section5",
 			scrub: 1,
@@ -580,9 +582,9 @@ mm2.add("(min-width: 1000px)", () => {
 					img2,
 					{ rotation: 0 },
 					{
-						rotation: -360,
-						duration: 3,
-						ease: "Cubic.easeIn",
+						rotation: 360,
+						duration: 5,
+						ease: "SlowMo.easeInOut",
 						onComplete: () => {
 							animation = null;
 							if (!isHovering) {
@@ -608,7 +610,7 @@ mm2.add("(min-width: 1000px)", () => {
 					},
 				});
 				animation = gsap.to(img2, {
-					rotation: 0,
+					rotation: 360,
 					onComplete: () => {
 						animation = null;
 						if (isHovering) {

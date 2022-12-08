@@ -114,9 +114,10 @@
 }
 .script__cont {
 	width: 45%;
+	height: 45vh;
 }
 .script {
-	height: 45vh;
+	width: 37vw;
 }
 .script__svg01 {
 	width: 39vw;
