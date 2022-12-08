@@ -441,6 +441,14 @@ ScrollTrigger.create({
 	}),
 	delay: 1,
 });
+ScrollTrigger.create({
+	trigger: ".script__detail",
+	scrub: 1,
+	animation: gsap.to(".header__list", {
+		background: "#f55c47",
+	}),
+	delay: 1,
+});
 
 //가로모드 자바스크립트 오버 할때 효과
 let mm2 = gsap.matchMedia();
