@@ -301,17 +301,6 @@ ScrollTrigger.matchMedia({
 				scrub: 1,
 			});
 		});
-		let reacts = gsap.utils.toArray(".react");
-		reacts.forEach((react, i) => {
-			ScrollTrigger.create({
-				trigger: react,
-				start: "top 70px",
-				end: "bottom 70px",
-				pin: i === react.length - 1 ? false : true,
-				pinSpacing: false,
-				scrub: 1,
-			});
-		});
 	},
 });
 
@@ -427,14 +416,6 @@ ScrollTrigger.matchMedia({
 //가로모드 색 변경
 ScrollTrigger.create({
 	trigger: ".script__detail",
-	scrub: 0.1,
-	animation: gsap.to(".header__inner", {
-		background: "#f55c47",
-	}),
-	delay: -1,
-});
-ScrollTrigger.create({
-	trigger: ".script__detail",
 	scrub: 1,
 	animation: gsap.to(".header__inner", {
 		background: "#f55c47",
@@ -529,4 +510,197 @@ mm2.add("(min-width: 1000px)", () => {
 			}
 		}
 	});
+});
+//헤더 원래 색
+ScrollTrigger.create({
+	trigger: "#section6",
+	scrub: 1,
+	animation: gsap.to(".header__inner", {
+		background: "#f0f0f0",
+	}),
+	delay: 1,
+});
+ScrollTrigger.create({
+	trigger: "#section6",
+	scrub: 1,
+	animation: gsap.to(".header__list", {
+		background: "#f0f0f0",
+	}),
+	delay: 1,
+});
+
+//react 사이트부분 위에 고정
+ScrollTrigger.matchMedia({
+	"(min-width: 560px)": function () {
+		//사이트 부분 위에 고정
+		let reacts = gsap.utils.toArray(".react");
+		reacts.forEach((react, i) => {
+			ScrollTrigger.create({
+				trigger: react,
+				start: "top 70px",
+				end: "bottom 70px",
+				pin: i === react.length - 1 ? false : true,
+				pinSpacing: false,
+				scrub: 1,
+			});
+		});
+	},
+});
+
+//마지막 글씨 효과
+ScrollTrigger.matchMedia({
+	"(min-width: 900px)": function () {
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r1",
+				{
+					scale: (1.4, 1.4),
+					opacity: 0,
+					transformOrigin: "1300px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,-30px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r2",
+				{
+					scale: (1.3, 1.3),
+					opacity: 0,
+					transformOrigin: "900px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,-25px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r3",
+				{
+					scale: (1.4, 1.4),
+					opacity: 0,
+					transformOrigin: "1300px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,-20px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r4",
+				{
+					scale: (1.3, 1.3),
+					opacity: 0,
+					transformOrigin: "900px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,-15px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r5",
+				{
+					scale: (1.4, 1.4),
+					opacity: 0,
+					transformOrigin: "1300px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,-10px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r6",
+				{
+					scale: (1.3, 1.3),
+					opacity: 0,
+					transformOrigin: "900px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,-5px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r7",
+				{
+					scale: (1.4, 1.4),
+					opacity: 0,
+					transformOrigin: "1300px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,0,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".c-rail__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".r8",
+				{
+					scale: (1.3, 1.3),
+					opacity: 0,
+					transformOrigin: "900px 18px",
+					transform: "translate(0,50px)",
+				},
+				{
+					scale: 1,
+					opacity: 1,
+					transformOrigin: "50% 0%",
+					transform: "translate3d(0,5px,0)",
+				}
+			),
+		});
+	},
 });

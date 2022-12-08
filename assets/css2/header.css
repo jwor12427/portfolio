@@ -43,6 +43,7 @@
 	font-family: "Abel";
 	text-transform: uppercase;
 	line-height: 1.1;
+	background-color: #f0f0f0;
 }
 .header__link a {
 	transition: color 0.3s;

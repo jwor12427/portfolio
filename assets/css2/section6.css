@@ -1,0 +1,36 @@
+/** @format */
+
+#section6 {
+	width: 100%;
+}
+.script__before.end {
+	border-bottom: 2px solid #101010;
+}
+.script__be__inner.end {
+	border: none;
+}
+.script__detail.ra {
+	flex-direction: row;
+}
+
+.detail__desc.ra {
+	color: #101010;
+}
+/* section7 */
+.c-rail__inner {
+	border-bottom: 2px solid #101010;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.c-rail__line {
+	font-family: "PPMonument";
+	font-size: 4vw;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 90%;
+	will-change: transform;
+	user-select: none;
+}
