@@ -174,9 +174,6 @@
 	font-family: "NexonLv2Gothic";
 	margin-bottom: 25px;
 }
-/* .site__go {
-	background-color: #fff;
-} */
 
 .site__go {
 	position: relative;
@@ -252,6 +249,9 @@
 	justify-content: space-around;
 	padding-top: 7vw;
 }
+.rail__inner-j {
+	animation: j-rail 60s linear infinite;
+}
 /* 미디어 쿼리 */
 @media (max-width: 1000px) {
 	#section5 {
@@ -287,7 +287,7 @@
 		scale: 1;
 	}
 	.rail__inner-j {
-		animation: c-rail 30s linear infinite;
+		animation: j-rail 30s linear infinite;
 	}
 	.script__rail-t {
 		top: 4%;
@@ -303,7 +303,7 @@
 	}
 	.back__img,
 	.script__back {
-		animation: rotateIt 20s linear infinite;
+		animation: rotateIt 40s linear infinite;
 	}
 }
 @media (max-width: 870px) {
@@ -366,19 +366,27 @@
 	.behind__desc {
 		top: 60%;
 		left: 37%;
-		transform: translate(-15%, 10px);
+		transform: translate(-15%, 20%);
 	}
 	.behind__desc.plus {
 		left: 37%;
-		transform: translate(-20%, 10px);
+		transform: translate(-20%, 20%);
 	}
 	.behind__desc.last {
-		transform: translate(10%, 10px);
+		transform: translate(10%, 20%);
 	}
 	.be__title {
 		font-size: 20px;
 	}
 	.site__go span {
 		font-size: 16px;
+	}
+}
+@keyframes j-rail {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
 	}
 }
