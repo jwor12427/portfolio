@@ -287,7 +287,7 @@
 		scale: 1;
 	}
 	.rail__inner-j {
-		animation: c-rail 25s linear infinite;
+		animation: c-rail 30s linear infinite;
 	}
 	.script__rail-t {
 		top: 4%;
@@ -338,9 +338,11 @@
 		border: none;
 		height: 100vh;
 		justify-content: space-around;
+		margin-bottom: 20px;
 	}
 	.script__cont {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 	.script__cont02 {
 		width: 100%;
@@ -364,14 +366,14 @@
 	.behind__desc {
 		top: 60%;
 		left: 37%;
-		transform: translate(-16px, 10px);
+		transform: translate(-15%, 10px);
 	}
 	.behind__desc.plus {
 		left: 37%;
-		transform: translate(-33px, 10px);
+		transform: translate(-20%, 10px);
 	}
 	.behind__desc.last {
-		transform: translate(4px, 10px);
+		transform: translate(10%, 10px);
 	}
 	.be__title {
 		font-size: 20px;
