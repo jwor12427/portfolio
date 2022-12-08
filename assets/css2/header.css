@@ -21,7 +21,7 @@
 .header__logo {
 	width: 15%;
 	font-family: "PPMonument";
-	font-size: 1.4vw;
+	font-size: 18px;
 	font-weight: 200;
 	text-transform: uppercase;
 	border-right: 1px solid #101010;
@@ -40,7 +40,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	font-size: 1.2vw;
+	font-size: 14px;
 	font-family: "Abel";
 	text-transform: uppercase;
 	line-height: 1.1;

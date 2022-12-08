@@ -168,6 +168,7 @@
 		flex-direction: column;
 		text-align: center;
 		overflow: hidden;
+		height: 88vh;
 	}
 	.site__inner-d.sce {
 		flex-direction: column-reverse;
@@ -197,26 +198,42 @@
 		padding: 0;
 	}
 	.site__left__title {
-		font-size: 4vw;
+		font-size: 24px;
+	}
+	.site__back {
+		width: 500px;
+	}
+	.site__fron {
+		width: 500px;
 	}
 }
 @media (max-width: 600px) {
 	.site__inner-d {
-		height: 85vw;
+		height: 50vh;
 	}
-	.site__back {
-		width: 45vw;
-	}
-	.site__fron {
-		width: 45vw;
-	}
+
 	.site__left {
 		padding: 1.5rem;
+		margin-bottom: 15px;
 	}
 	.s-rail__line {
 		line-height: 100%;
 	}
 	.script__be-line {
 		line-height: 120%;
+	}
+	.site__back {
+		width: 400px;
+	}
+	.site__fron {
+		width: 400px;
+	}
+	.site__left__desc {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.site__btn a {
+		padding: 7px 20px;
+		font-size: 12px;
 	}
 }
