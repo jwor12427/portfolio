@@ -122,6 +122,9 @@
 	/* #section1 {
 		height: 160vw;
 	} */
+	.main__box {
+		height: 90vh;
+	}
 	.main__ce {
 		display: flex;
 		justify-content: center;

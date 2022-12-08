@@ -300,6 +300,7 @@
 					transformOrigin: "top",
 					ease: "Sine.easeInOut",
 					duration: 1,
+					delay: 0.2,
 				}
 			);
 			tl3.fromTo(
@@ -313,60 +314,26 @@
 				{
 					opacity: 1,
 					transform: "translate3d(0, 0, 0)",
-					ease: "bounce",
+					ease: "Sine.easeInOut",
 					transformOrigin: "top",
 					duration: 1,
 				}
 			);
-			// tl3.fromTo(
-			// 	".header__main",
-			// 	{
-			// 		opacity: 0,
-			// 		transform: "translate3d(0, 100%, 0)",
-			// 		visibility: "visible",
-			// 		transformOrigin: "bottom",
-			// 	},
-			// 	{
-			// 		opacity: 1,
-			// 		transform: "translate3d(0, 0, 0)",
-			// 		delay: 0.2,
-			// 		transformOrigin: "top",
-			// 		duration: 1,
-			// 	}
-			// );
-			// tl4.fromTo(
-			// 	".header__nav",
-			// 	{
-			// 		opacity: 0,
-			// 		transform: "translate3d(0, -100%, 0)",
-			// 		visibility: "visible",
-			// 		transformOrigin: "top",
-			// 	},
-			// 	{
-			// 		opacity: 1,
-			// 		transform: "translate3d(0, 0, 0)",
-			// 		ease: "bounce",
-			// 		delay: 0.2,
-			// 		transformOrigin: "top",
-			// 		duration: 1,
-			// 	}
-			// );
-			// tl4.fromTo(
-			// 	".header__link",
-			// 	{
-			// 		opacity: 0,
-			// 		transform: "translate3d(0, 100%, 0)",
-			// 		visibility: "visible",
-			// 		transformOrigin: "bottom",
-			// 	},
-			// 	{
-			// 		opacity: 1,
-			// 		transform: "translate3d(0, 0, 0)",
-			// 		delay: 0.4,
-			// 		transformOrigin: "top",
-			// 		duration: 1,
-			// 	}
-			// );
+			tl2.fromTo(
+				".rail__item",
+				{
+					opacity: 0,
+					transform: "translate3d(100%, 0, 0)",
+					transformOrigin: "left",
+				},
+				{
+					opacity: 1,
+					transform: "translate3d(0, 0, 0)",
+					transformOrigin: "left",
+					delay: 0.5,
+					duration: 1,
+				}
+			);
 		</script>
 	</body>
 </html>
