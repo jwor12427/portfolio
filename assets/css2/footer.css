@@ -85,6 +85,7 @@
 	height: 35vw;
 	position: absolute;
 	z-index: 10;
+	animation: rotateIt 25s linear infinite;
 }
 .con__front {
 	width: 35vw;
@@ -110,6 +111,7 @@
 	text-transform: uppercase;
 	white-space: nowrap;
 	font-family: "PPMonument";
+	animation: rail3 30s linear infinite;
 }
 @keyframes iconup {
 	0% {
@@ -190,5 +192,36 @@
 	}
 	.contact__sub p {
 		text-align: center;
+	}
+}
+@media (max-width: 550px) {
+	.con__back,
+	.con__front {
+		width: 300px;
+	}
+	.contact__sub p,
+	.contact__list li a {
+		font-size: 14px;
+	}
+	.contact__sub {
+		bottom: 5%;
+	}
+	.head__line .head__detail {
+		padding: 7px 5px 10px 5px;
+		text-align: center;
+	}
+	.head__line .head__detail a {
+		font-size: 13px;
+		font-weight: 500;
+	}
+}
+
+/* 애니메이션 */
+@keyframes rail3 {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translate3d(-60%, 0, 0);
 	}
 }
