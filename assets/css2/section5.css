@@ -275,6 +275,9 @@
 		padding-top: 4vw;
 		border-bottom: 2px solid #fff;
 	}
+	.section5 {
+		border-bottom: none;
+	}
 	.script {
 		display: flex;
 		justify-content: center;
