@@ -165,6 +165,7 @@
 	.contact__sub h2,
 	.contact__list h2 {
 		font-size: 20px;
+		margin-bottom: 10px;
 	}
 	.contact__list {
 		width: 100%;
@@ -227,7 +228,21 @@
 		font-weight: 500;
 	}
 }
-
+@media (max-width: 375px) {
+	.con__back,
+	.con__front {
+		width: 150px;
+		height: 150px;
+	}
+	.contact__sub h2,
+	.contact__list h2 {
+		font-size: 14px;
+	}
+	.contact__sub p,
+	.contact__list li a {
+		font-size: 12px;
+	}
+}
 /* 애니메이션 */
 @keyframes rail3 {
 	0% {

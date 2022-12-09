@@ -388,6 +388,29 @@
 		font-size: 16px;
 	}
 }
+@media (max-width: 375px) {
+	.script__back,
+	.script__pron {
+		width: 300px;
+	}
+	.script__svg02,
+	.script__svg01,
+	.script__behind01 {
+		width: 300px;
+	}
+	.behind__desc {
+		top: 60%;
+		left: 37%;
+		transform: translate(-23%, 55%);
+	}
+	.behind__desc.plus {
+		left: 37%;
+		transform: translate(-25%, 45%);
+	}
+	.behind__desc.last {
+		transform: translate(0%, 37%);
+	}
+}
 @keyframes j-rail {
 	from {
 		transform: translateX(0);
