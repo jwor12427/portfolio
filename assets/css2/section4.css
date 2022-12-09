@@ -144,7 +144,7 @@
 .script__detail {
 	border-bottom: 2px solid #fff;
 	/* height: 10vw; */
-	padding: 2vw 3vw;
+	padding: 4vw 3vw;
 	display: flex;
 	align-items: center;
 	flex-direction: row-reverse;
@@ -214,7 +214,7 @@
 		font-size: 16px;
 	}
 	.script__detail {
-		padding: 25px 20px;
+		padding: 35px 20px;
 	}
 	.script__be-line {
 		line-height: 100%;
