@@ -209,6 +209,12 @@
 	.contact__sub {
 		bottom: 5%;
 	}
+	.head__detail:nth-child(2),
+	.head__detail:nth-child(3) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	.head__line .head__detail {
 		padding: 7px 5px 10px 5px;
 		text-align: center;
