@@ -115,6 +115,9 @@
 	left: 8px;
 	background: black;
 }
+.header__list.red {
+	background: #f55c47;
+}
 
 /* 미디어쿼리 */
 @media (max-width: 900px) {
@@ -125,6 +128,7 @@
 		justify-content: space-around;
 	}
 	.header__nav {
+		background: #f0f0f0;
 		width: 100%;
 		opacity: 0;
 		position: fixed;
@@ -134,7 +138,7 @@
 		opacity: 1;
 	}
 	.header__nav ul {
-		background-color: #f0f0f0;
+		background: #f0f0f0;
 		margin-bottom: 15px;
 		transform: scaleY(1.25);
 		position: absolute;
