@@ -48,18 +48,18 @@ tl3.fromTo(
 		duration: 1,
 	}
 );
-tl2.fromTo(
-	".rail__item",
+tl4.fromTo(
+	".rail__inner",
 	{
 		opacity: 0,
-		transform: "translate3d(100%, 0, 0)",
-		transformOrigin: "left",
+		transform: "translate3d(0, 100%, 0)",
+		transformOrigin: "bottom",
 	},
 	{
 		opacity: 1,
 		transform: "translate3d(0, 0, 0)",
-		transformOrigin: "left",
-		delay: 0.5,
+		transformOrigin: "top",
+		delay: 0.8,
 		duration: 1,
 	}
 );
@@ -511,22 +511,98 @@ mm2.add("(min-width: 1000px)", () => {
 		}
 	});
 });
+
 //헤더 원래 색
 ScrollTrigger.create({
-	trigger: "#section6",
+	trigger: ".react__detail",
 	scrub: 1,
 	animation: gsap.to(".header__inner", {
 		background: "#f0f0f0",
 	}),
+	duration: 1,
 	delay: 1,
 });
 ScrollTrigger.create({
-	trigger: "#section6",
+	trigger: ".react__detail",
 	scrub: 1,
 	animation: gsap.to(".header__list", {
 		background: "#f0f0f0",
 	}),
 	delay: 1,
+});
+
+//글씨 효과 - javascript coding(마지막 부분)
+ScrollTrigger.matchMedia({
+	"(min-width: 900px)": function () {
+		ScrollTrigger.create({
+			trigger: ".end__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".j1",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.976,
+					opacity: 1,
+					transform: "translate3d(0,-30px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".end__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".j2",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(-20px,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(-20px,-20px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".end__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".j3",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(0,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(0,-10px,0)",
+				}
+			),
+		});
+		ScrollTrigger.create({
+			trigger: ".end__inner",
+			scrub: 1,
+			animation: gsap.fromTo(
+				".j4",
+				{
+					scale: 1.35,
+					opacity: 0,
+					transform: "translate3d(-20px,0,0)",
+				},
+				{
+					scale: 0.96,
+					opacity: 1,
+					transform: "translate3d(-20px,0,0)",
+				}
+			),
+		});
+	},
 });
 
 //react 사이트부분 위에 고정

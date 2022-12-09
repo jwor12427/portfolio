@@ -81,11 +81,12 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background-color: #f0f0f0;
+	background-color: #101010;
 }
 .rail__inner {
 	white-space: nowrap;
 	display: flex;
+	background-color: #f0f0f0;
 }
 .rail__item {
 	display: flex;

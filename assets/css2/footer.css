@@ -129,6 +129,7 @@
 	.con__back,
 	.con__front {
 		width: 500px;
+		height: 500px;
 	}
 	.contact__sub p,
 	.contact__list li a {
@@ -189,6 +190,7 @@
 	.con__back,
 	.con__front {
 		width: 350px;
+		height: 350px;
 	}
 	.contact__sub p {
 		text-align: center;
@@ -198,6 +200,7 @@
 	.con__back,
 	.con__front {
 		width: 300px;
+		height: 300px;
 	}
 	.contact__sub p,
 	.contact__list li a {
