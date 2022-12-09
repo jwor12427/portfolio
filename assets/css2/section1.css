@@ -149,16 +149,15 @@
 		margin-bottom: 20px;
 	}
 }
-@media (max-width: 550px) {
-	.rail__item {
-		animation: rail2 20s linear infinite;
-	}
+@media (max-width: 600px) {
 	.main__top {
 		display: none;
 	}
-	.top__title {
-		animation: rail 10s linear infinite;
+	.rail__item {
+		animation: rail2 20s linear infinite;
 	}
+}
+@media (max-width: 550px) {
 	.back {
 		width: 400px;
 		height: 400px;

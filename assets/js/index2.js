@@ -66,7 +66,7 @@ tl4.fromTo(
 
 //scrollTrigger 미디어
 ScrollTrigger.matchMedia({
-	"(min-width: 560px)": function () {
+	"(min-width: 600px)": function () {
 		//main rail 움직이기
 		gsap.to(".rail__item", {
 			scrollTrigger: {
