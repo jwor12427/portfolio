@@ -199,8 +199,8 @@
 @media (max-width: 550px) {
 	.con__back,
 	.con__front {
-		width: 300px;
-		height: 300px;
+		width: 250px;
+		height: 250px;
 	}
 	.contact__sub p,
 	.contact__list li a {
