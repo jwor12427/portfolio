@@ -188,4 +188,7 @@
 	.con__front {
 		width: 350px;
 	}
+	.contact__sub p {
+		text-align: center;
+	}
 }
