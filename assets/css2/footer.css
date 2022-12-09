@@ -195,6 +195,9 @@
 	.contact__sub p {
 		text-align: center;
 	}
+	.l-rail__item p {
+		font-size: 18px;
+	}
 }
 @media (max-width: 550px) {
 	.con__back,
