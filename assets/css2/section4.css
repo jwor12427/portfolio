@@ -219,6 +219,9 @@
 	.script__be-line {
 		line-height: 100%;
 	}
+	.site__btn a:first-child {
+		margin-right: 7px;
+	}
 }
 @media (max-width: 600px) {
 	.site__inner-d {
