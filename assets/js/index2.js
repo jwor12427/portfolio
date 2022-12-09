@@ -422,14 +422,14 @@ ScrollTrigger.create({
 	}),
 	delay: 1,
 });
-// ScrollTrigger.create({
-// 	trigger: ".script__detail",
-// 	scrub: 1,
-// 	animation: gsap.to(".header__list", {
-// 		backgroundColor: "#f55c47",
-// 	}),
-// 	delay: 1,
-// });
+ScrollTrigger.create({
+	trigger: ".script__detail",
+	scrub: 1,
+	animation: gsap.to(".header__list", {
+		backgroundColor: "#f55c47",
+	}),
+	delay: 1,
+});
 ScrollTrigger.create({
 	trigger: "#section5",
 	scrub: 1,
@@ -528,14 +528,14 @@ ScrollTrigger.create({
 	duration: 1,
 	delay: 1,
 });
-// ScrollTrigger.create({
-// 	trigger: ".react__detail",
-// 	scrub: 1,
-// 	animation: gsap.to(".header__list", {
-// 		background: "#f0f0f0",
-// 	}),
-// 	delay: 1,
-// });
+ScrollTrigger.create({
+	trigger: ".react__detail",
+	scrub: 1,
+	animation: gsap.to(".header__list", {
+		background: "#f0f0f0",
+	}),
+	delay: 1,
+});
 
 //글씨 효과 - javascript coding(마지막 부분)
 ScrollTrigger.matchMedia({

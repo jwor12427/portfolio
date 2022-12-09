@@ -68,7 +68,7 @@
 		transform: translateX(0);
 	}
 	to {
-		transform: translateX(-100%);
+		transform: translateX(-70%);
 	}
 }
 .rail__item-j {
@@ -121,12 +121,12 @@
 	width: 37vw;
 }
 .script__svg01 {
-	width: 39vw;
+	width: 37vw;
 	position: absolute;
 	z-index: 10;
 }
 .script01 {
-	width: 39vw;
+	width: 37vw;
 	position: absolute;
 	z-index: 100;
 }
@@ -134,18 +134,18 @@
 	width: 45%;
 }
 .script__svg02 {
-	width: 39vw;
+	width: 37vw;
 	position: absolute;
 	z-index: 10;
 }
 .script02 {
-	width: 39vw;
+	width: 37vw;
 	position: absolute;
 	z-index: 100;
 }
 .script__behind01 {
-	width: 39vw;
-	height: 39vw;
+	width: 37vw;
+	height: 37vw;
 	position: absolute;
 	z-index: 100;
 	scale: 0;
